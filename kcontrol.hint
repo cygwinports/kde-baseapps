@@ -1,0 +1,4 @@
+category: KDE
+requires: cygwin kdelibs4 qt3 kicker libGL1 libGLU1 libXcursor1 libXext6 libXft2 libXrandr2 libfontconfig1 libfontenc1 libusb-win32 openssl
+sdesc: "KDE preference control panels"
+ldesc: "KDE base desktop packages"

@@ -1,0 +1,4 @@
+category: KDE
+requires: cygwin kdelibs4 qt3
+sdesc: "KDE printing framework"
+ldesc: "KDE base desktop packages"

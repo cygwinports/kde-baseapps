@@ -1,0 +1,4 @@
+category: KDE
+requires: cygwin kdelibs4 qt3 libXtst6 libxkbfile1
+sdesc: "KDE keyboard layout switcher"
+ldesc: "KDE base desktop packages"

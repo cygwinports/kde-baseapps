@@ -1,0 +1,4 @@
+category: KDE
+requires: cygwin kdelibs4 qt3 libXtst6
+sdesc: "KDE hotkey manager"
+ldesc: "KDE base desktop packages"

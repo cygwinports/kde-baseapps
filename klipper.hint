@@ -1,0 +1,4 @@
+category: KDE
+requires: cygwin kdelibs4 qt3 kicker
+sdesc: "KDE clipboard manager"
+ldesc: "KDE base desktop packages"

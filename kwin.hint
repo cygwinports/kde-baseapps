@@ -1,0 +1,4 @@
+category: KDE
+requires: cygwin kdelibs4 qt3 libXdamage1 libXext6 libXfixes3 libXrender1
+sdesc: "KDE desktop window manager"
+ldesc: "KDE base desktop packages"

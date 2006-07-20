@@ -1,0 +1,12 @@
+usr/bin/cygkdeinit_kcminit.dll
+usr/bin/cygkdeinit_kcminit_startup.dll
+usr/bin/kcminit.exe
+usr/bin/kcminit_startup.exe
+usr/lib/kde3/kcminit.dll
+usr/lib/kde3/kcminit.la
+usr/lib/kde3/kcminit_startup.dll
+usr/lib/kde3/kcminit_startup.la
+usr/lib/libkdeinit_kcminit.dll.a
+usr/lib/libkdeinit_kcminit.la
+usr/lib/libkdeinit_kcminit_startup.dll.a
+usr/lib/libkdeinit_kcminit_startup.la

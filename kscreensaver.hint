@@ -1,0 +1,4 @@
+category: KDE
+requires: cygwin kdelibs4 qt3
+sdesc: "KDE base screensavers"
+ldesc: "KDE base desktop packages"

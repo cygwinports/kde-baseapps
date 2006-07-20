@@ -1,0 +1,4 @@
+category: KDE
+requires: cygwin kdelibs4 qt3
+sdesc: "KDE network integration wizard"
+ldesc: "KDE base desktop packages"
