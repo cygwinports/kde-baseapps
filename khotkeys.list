@@ -16,6 +16,7 @@ usr/lib/libkhotkeys_shared.dll.a
 usr/lib/libkhotkeys_shared.la
 usr/share/applications/kde/khotkeys.desktop
 usr/share/apps/kconf_update/khotkeys_32b1_update.upd
+usr/share/apps/kconf_update/khotkeys_printscreen.upd
 usr/share/apps/kconf_update/konqueror_gestures_kde321_update.upd
 usr/share/apps/khotkeys/
 usr/share/autostart/khotkeys.desktop

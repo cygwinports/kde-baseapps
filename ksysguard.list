@@ -2,15 +2,7 @@ etc/ksysguarddrc
 usr/bin/cygksgrd-1.dll
 usr/bin/kpm.exe
 usr/bin/ksysguard.exe
-usr/include/kde/ksgrd/HostConnector.h
-usr/include/kde/ksgrd/SensorAgent.h
-usr/include/kde/ksgrd/SensorClient.h
-usr/include/kde/ksgrd/SensorManager.h
-usr/include/kde/ksgrd/SensorShellAgent.h
-usr/include/kde/ksgrd/SensorSocketAgent.h
-usr/include/kde/ksgrd/StyleEngine.h
-usr/include/kde/ksgrd/StyleSettings.h
-usr/include/kde/ksgrd/TimerSettings.h
+usr/include/kde/ksgrd/
 usr/lib/kde3/sysguard_panelapplet.dll
 usr/lib/kde3/sysguard_panelapplet.la
 usr/lib/libksgrd.dll.a
