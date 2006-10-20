@@ -8,7 +8,7 @@ usr/bin/kdeinstallktheme
 usr/bin/keditfiletype.exe
 usr/bin/kfontinst.exe
 usr/bin/kfontview.exe
-usr/bin/kinfocenter.exe
+usr/bin/kinfocenter
 usr/bin/klocaldomainurifilterhelper.exe
 usr/bin/krandrtray.exe
 usr/bin/krdb

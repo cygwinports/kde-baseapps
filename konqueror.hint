@@ -1,4 +1,4 @@
 category: KDE
-requires: cygwin kdelibs4 qt3 libkonq kicker
+requires: cygwin kdelibs4 qt3 libkonq kicker kioslave
 sdesc: "KDE file explorer and web browser"
 ldesc: "KDE base desktop packages"
