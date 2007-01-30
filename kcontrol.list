@@ -261,6 +261,7 @@ usr/share/apps/kthememanager/
 usr/share/config/kshorturifilterrc
 usr/share/doc/HTML/en/kcontrol/
 usr/share/doc/HTML/en/kinfocenter/
+usr/share/doc/kcontrol-*/
 usr/share/fonts/override/fonts.dir
 usr/share/icons/crystalsvg/*/actions/newfont.*
 usr/share/icons/crystalsvg/*/apps/access.*

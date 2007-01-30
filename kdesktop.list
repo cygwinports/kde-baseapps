@@ -46,3 +46,5 @@ usr/share/templates/linkProgram.desktop
 usr/share/templates/linkURL.desktop
 usr/share/templates/linkZIP.desktop
 usr/share/templates/TextFile.desktop
+usr/share/wallpapers/
+usr/share/doc/kdesktop-*/

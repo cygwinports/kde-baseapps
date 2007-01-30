@@ -22,3 +22,4 @@ usr/share/services/konsole-script.desktop
 usr/share/services/konsolepart.desktop
 usr/share/services/kwrited.desktop
 usr/share/servicetypes/terminalemulator.desktop
+usr/share/doc/konsole-*/

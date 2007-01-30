@@ -1,5 +1,5 @@
-category: KDE
+category: Shells KDE
 requires: cygwin kdelibs4 qt3
 external-source: kdebase
-sdesc: "KDE diagnostic message manager"
+sdesc: "KDE dialog"
 ldesc: "KDE base desktop packages"

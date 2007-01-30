@@ -24,6 +24,8 @@ usr/lib/kde3/kicker.dll
 usr/lib/kde3/kicker.la
 usr/lib/kde3/kickermenu_find.dll
 usr/lib/kde3/kickermenu_find.la
+usr/lib/kde3/kickermenu_kate.dll
+usr/lib/kde3/kickermenu_kate.la
 usr/lib/kde3/kickermenu_kdeprint.dll
 usr/lib/kde3/kickermenu_kdeprint.la
 usr/lib/kde3/kickermenu_konqueror.dll
@@ -115,3 +117,4 @@ usr/share/icons/crystalsvg/32x32/apps/kdisknav.png
 usr/share/icons/crystalsvg/32x32/apps/window_list.png
 usr/share/icons/crystalsvg/48x48/apps/kdisknav.png
 usr/share/icons/crystalsvg/48x48/apps/window_list.png
+usr/share/doc/kicker-*/

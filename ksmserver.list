@@ -7,3 +7,4 @@ usr/lib/libkdeinit_ksmserver.la
 usr/share/apps/kconf_update/ksmserver.upd
 usr/share/apps/kconf_update/move_session_config.sh
 usr/share/apps/ksmserver/pics/shutdownkonq.png
+usr/share/doc/ksmserver-*/

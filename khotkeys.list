@@ -22,3 +22,4 @@ usr/share/apps/khotkeys/
 usr/share/autostart/khotkeys.desktop
 usr/share/icons/hicolor/*/apps/khotkeys.png
 usr/share/services/kded/khotkeys.desktop
+usr/share/doc/khotkeys-*/

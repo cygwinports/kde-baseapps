@@ -145,3 +145,4 @@ usr/share/services/konq_sidebartng.desktop
 usr/share/services/konq_textview.desktop
 usr/share/services/konq_treeview.desktop
 usr/share/servicetypes/konqaboutpage.desktop
+usr/share/doc/konqueror-*/

@@ -1,0 +1,9 @@
+usr/bin/nspluginscan.exe
+usr/bin/nspluginviewer.exe
+usr/lib/kde3/cygnsplugin.dll
+usr/lib/kde3/kcm_nsplugins.dll
+usr/lib/kde3/kcm_nsplugins.la
+usr/lib/kde3/libnsplugin.la
+usr/share/applications/kde/khtml_plugins.desktop
+usr/share/apps/plugin/nspluginpart.rc
+usr/share/doc/nsplugins-*/
