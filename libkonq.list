@@ -20,8 +20,8 @@ usr/include/kde/konq_settings.h
 usr/include/kde/konq_undo.h
 usr/include/kde/konq_xmlguiclient.h
 usr/include/kde/libkonq_export.h
-usr/lib/kde3/kded_favicons.dll
-usr/lib/kde3/kded_favicons.la
+usr/lib/kde3/kded_favicons.*
+usr/lib/kde3/konq_sound.*
 usr/lib/libkonq.dll.a
 usr/lib/libkonq.la
 usr/share/apps/kbookmark/directory_bookmarkbar.desktop

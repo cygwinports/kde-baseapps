@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 qt3
+requires: cygwin arts kdelibs4 qt3
 external-source: kdebase
 sdesc: "KDE konqueror library"
 ldesc: "KDE base desktop packages"
