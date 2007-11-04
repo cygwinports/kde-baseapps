@@ -1,12 +1,9 @@
 usr/bin/cygkdeinit_konsole.dll
 usr/bin/konsole.exe
 usr/lib/kde3/cygkonsolepart.dll
-usr/lib/kde3/kded_kwrited.dll
-usr/lib/kde3/kded_kwrited.la
-usr/lib/kde3/konsole.dll
-usr/lib/kde3/konsole.la
+usr/lib/kde3/kded_kwrited.*
+usr/lib/kde3/konsole.*
 usr/lib/kde3/libkonsolepart.la
-usr/lib/libkdeinit_konsole.dll.a
 usr/lib/libkdeinit_konsole.la
 usr/share/applications/kde/konsole.desktop
 usr/share/applications/kde/konsolesu.desktop
@@ -23,3 +20,4 @@ usr/share/services/konsolepart.desktop
 usr/share/services/kwrited.desktop
 usr/share/servicetypes/terminalemulator.desktop
 usr/share/doc/konsole-*/
+usr/share/doc/Cygwin/konsole-3*.README

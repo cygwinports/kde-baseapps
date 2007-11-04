@@ -1,0 +1,235 @@
+kdm
+------------------------------------------
+KDE domain manager
+
+Common runtime requirements:
+  cygwin-1.5.24-2
+  kdelibs4-3.5.8-1
+  libX11_6-1.1.3-1
+  libXtst6-1.0.3-1
+  qt3-3.3.8-3
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  perl-5.8.7-5
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.kde.org/
+
+Canonical download:
+  ftp://ftp.kde.org/pub/kde/stable/3.5.8/src/
+
+-------------------------------------------
+
+Build instructions:
+  unpack kdebase-3.5.8-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./kdebase-3.5.8-X.cygport all
+
+This will create:
+  /usr/src/kdebase-3.5.8-X-src.tar.bz2
+  /usr/src/kdebase-3.5.8-X.tar.bz2
+
+  /usr/src/drkonqi-3.5.8-X.tar.bz2
+  /usr/src/kappfinder-3.5.8-X.tar.bz2
+  /usr/src/kate-3.5.8-X.tar.bz2
+  /usr/src/kcheckpass-3.5.8-X.tar.bz2
+  /usr/src/kcminit-3.5.8-X.tar.bz2
+  /usr/src/kcontrol-3.5.8-X.tar.bz2
+  /usr/src/kdcop-3.5.8-X.tar.bz2
+  /usr/src/kdebase-data-3.5.8-X.tar.bz2
+  /usr/src/kdebugdialog-3.5.8-X.tar.bz2
+  /usr/src/kdeprint-3.5.8-X.tar.bz2
+  /usr/src/kdesktop-3.5.8-X.tar.bz2
+  /usr/src/kdesu-3.5.8-X.tar.bz2
+  /usr/src/kdialog-3.5.8-X.tar.bz2
+  /usr/src/kdm-3.5.8-X.tar.bz2
+  /usr/src/kfind-3.5.8-X.tar.bz2
+  /usr/src/khelpcenter-3.5.8-X.tar.bz2
+  /usr/src/khotkeys-3.5.8-X.tar.bz2
+  /usr/src/kicker-3.5.8-X.tar.bz2
+  /usr/src/kioslave-3.5.8-X.tar.bz2
+  /usr/src/klipper-3.5.8-X.tar.bz2
+  /usr/src/kmenuedit-3.5.8-X.tar.bz2
+  /usr/src/knetattach-3.5.8-X.tar.bz2
+  /usr/src/konqueror-3.5.8-X.tar.bz2
+  /usr/src/konsole-3.5.8-X.tar.bz2
+  /usr/src/kpager-3.5.8-X.tar.bz2
+  /usr/src/kpersonalizer-3.5.8-X.tar.bz2
+  /usr/src/kreadconfig-3.5.8-X.tar.bz2
+  /usr/src/kscreensaver-3.5.8-X.tar.bz2
+  /usr/src/ksmserver-3.5.8-X.tar.bz2
+  /usr/src/ksplash-3.5.8-X.tar.bz2
+  /usr/src/ksysguard-3.5.8-X.tar.bz2
+  /usr/src/kstart-3.5.8-X.tar.bz2
+  /usr/src/ksystraycmd-3.5.8-X.tar.bz2
+  /usr/src/ktip-3.5.8-X.tar.bz2
+  /usr/src/kwin-3.5.8-X.tar.bz2
+  /usr/src/kxkb-3.5.8-X.tar.bz2
+  /usr/src/libkonq-3.5.8-X.tar.bz2
+  /usr/src/nsplugins-3.5.8-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(kdm)
+  /usr/bin/genkdmconf.exe
+  /usr/bin/kdepasswd.exe
+  /usr/bin/kdm.exe
+  /usr/bin/kdmctl.exe
+  /usr/bin/kdm_config.exe
+  /usr/bin/kdm_greet.exe
+  /usr/bin/krootimage.exe
+  /usr/include/kde/kgreeterplugin.h
+  /usr/lib/kde3/kcm_useraccount.dll
+  /usr/lib/kde3/kcm_useraccount.la
+  /usr/lib/kde3/kgreet_classic.dll
+  /usr/lib/kde3/kgreet_classic.la
+  /usr/lib/kde3/kgreet_winbind.dll
+  /usr/lib/kde3/kgreet_winbind.la
+  /usr/share/applications/kde/kcm_useraccount.desktop
+  /usr/share/applications/kde/kdepasswd.desktop
+  /usr/share/apps/kdm/pics/kdelogo-crystal.png
+  /usr/share/apps/kdm/pics/kdelogo.png
+  /usr/share/apps/kdm/pics/shutdown.jpg
+  /usr/share/apps/kdm/pics/users/Apple.png
+  /usr/share/apps/kdm/pics/users/BeachBall.png
+  /usr/share/apps/kdm/pics/users/Blowfish.png
+  /usr/share/apps/kdm/pics/users/Bug.png
+  /usr/share/apps/kdm/pics/users/Butterfly.png
+  /usr/share/apps/kdm/pics/users/Car.png
+  /usr/share/apps/kdm/pics/users/Cow.png
+  /usr/share/apps/kdm/pics/users/Daemon.png
+  /usr/share/apps/kdm/pics/users/Dog.png
+  /usr/share/apps/kdm/pics/users/Elephant.png
+  /usr/share/apps/kdm/pics/users/Flower.png
+  /usr/share/apps/kdm/pics/users/Frog.png
+  /usr/share/apps/kdm/pics/users/Ghost.png
+  /usr/share/apps/kdm/pics/users/Guitar.png
+  /usr/share/apps/kdm/pics/users/Heart.png
+  /usr/share/apps/kdm/pics/users/Konqui.png
+  /usr/share/apps/kdm/pics/users/Lion.png
+  /usr/share/apps/kdm/pics/users/Monkey.png
+  /usr/share/apps/kdm/pics/users/Penguin.png
+  /usr/share/apps/kdm/pics/users/Pig.png
+  /usr/share/apps/kdm/pics/users/Rabbit.png
+  /usr/share/apps/kdm/pics/users/Ring.png
+  /usr/share/apps/kdm/pics/users/Scream.png
+  /usr/share/apps/kdm/pics/users/Shark.png
+  /usr/share/apps/kdm/pics/users/Splash.png
+  /usr/share/apps/kdm/pics/users/Star.png
+  /usr/share/apps/kdm/pics/users/Teddybear.png
+  /usr/share/apps/kdm/pics/users/Turtle.png
+  /usr/share/apps/kdm/pics/users/default1.png
+  /usr/share/apps/kdm/pics/users/default2.png
+  /usr/share/apps/kdm/pics/users/default3.png
+  /usr/share/apps/kdm/pics/users/root1.png
+  /usr/share/apps/kdm/sessions/9wm.desktop
+  /usr/share/apps/kdm/sessions/aewm++.desktop
+  /usr/share/apps/kdm/sessions/aewm.desktop
+  /usr/share/apps/kdm/sessions/afterstep.desktop
+  /usr/share/apps/kdm/sessions/amaterus.desktop
+  /usr/share/apps/kdm/sessions/amiwm.desktop
+  /usr/share/apps/kdm/sessions/asclassic.desktop
+  /usr/share/apps/kdm/sessions/blackbox.desktop
+  /usr/share/apps/kdm/sessions/cde.desktop
+  /usr/share/apps/kdm/sessions/ctwm.desktop
+  /usr/share/apps/kdm/sessions/cwwm.desktop
+  /usr/share/apps/kdm/sessions/enlightenment.desktop
+  /usr/share/apps/kdm/sessions/evilwm.desktop
+  /usr/share/apps/kdm/sessions/fluxbox.desktop
+  /usr/share/apps/kdm/sessions/flwm.desktop
+  /usr/share/apps/kdm/sessions/fvwm.desktop
+  /usr/share/apps/kdm/sessions/fvwm95.desktop
+  /usr/share/apps/kdm/sessions/gnome.desktop
+  /usr/share/apps/kdm/sessions/golem.desktop
+  /usr/share/apps/kdm/sessions/icewm.desktop
+  /usr/share/apps/kdm/sessions/ion.desktop
+  /usr/share/apps/kdm/sessions/kde.desktop
+  /usr/share/apps/kdm/sessions/larswm.desktop
+  /usr/share/apps/kdm/sessions/lwm.desktop
+  /usr/share/apps/kdm/sessions/matchbox.desktop
+  /usr/share/apps/kdm/sessions/metacity.desktop
+  /usr/share/apps/kdm/sessions/mwm.desktop
+  /usr/share/apps/kdm/sessions/olvwm.desktop
+  /usr/share/apps/kdm/sessions/olwm.desktop
+  /usr/share/apps/kdm/sessions/openbox.desktop
+  /usr/share/apps/kdm/sessions/oroborus.desktop
+  /usr/share/apps/kdm/sessions/phluid.desktop
+  /usr/share/apps/kdm/sessions/pwm.desktop
+  /usr/share/apps/kdm/sessions/qvwm.desktop
+  /usr/share/apps/kdm/sessions/ratpoison.desktop
+  /usr/share/apps/kdm/sessions/sapphire.desktop
+  /usr/share/apps/kdm/sessions/sawfish.desktop
+  /usr/share/apps/kdm/sessions/twm.desktop
+  /usr/share/apps/kdm/sessions/ude.desktop
+  /usr/share/apps/kdm/sessions/vtwm.desktop
+  /usr/share/apps/kdm/sessions/w9wm.desktop
+  /usr/share/apps/kdm/sessions/waimea.desktop
+  /usr/share/apps/kdm/sessions/wm2.desktop
+  /usr/share/apps/kdm/sessions/wmaker.desktop
+  /usr/share/apps/kdm/sessions/xfce.desktop
+  /usr/share/apps/kdm/sessions/xfce4.desktop
+  /usr/share/apps/kdm/themes/circles/background.svg
+  /usr/share/apps/kdm/themes/circles/circles.xml
+  /usr/share/apps/kdm/themes/circles/flower.png
+  /usr/share/apps/kdm/themes/circles/GdmGreeterTheme.desktop
+  /usr/share/apps/kdm/themes/circles/help.png
+  /usr/share/apps/kdm/themes/circles/options.png
+  /usr/share/apps/kdm/themes/circles/screenshot.png
+  /usr/share/config/kdm/backgroundrc
+  /usr/share/config/kdm/kdmrc
+  /usr/share/config/kdm/README
+  /usr/share/config/kdm/Xaccess
+  /usr/share/config/kdm/Xreset
+  /usr/share/config/kdm/Xresources
+  /usr/share/config/kdm/Xsession
+  /usr/share/config/kdm/Xsetup
+  /usr/share/config/kdm/Xstartup
+  /usr/share/config/kdm/Xwilling
+  /usr/share/config.kcfg/kcm_useraccount.kcfg
+  /usr/share/config.kcfg/kcm_useraccount_pass.kcfg
+  /usr/share/doc/HTML/en/kdm/index.cache.bz2
+  /usr/share/doc/HTML/en/kdm/index.docbook
+  /usr/share/doc/HTML/en/kdm/kdmrc-ref.docbook
+  /usr/share/doc/kdm/README
+
+------------------
+
+Port Notes:
+
+----- version 3.5.8-1 -----
+Version bump.
+
+----- version 3.5.7-1 -----
+Version bump.
+
+----- version 3.5.6-1 -----
+Version bump.
+
+----- version 3.5.5-1 -----
+Version bump.
+
+----- version 3.5.4-1 -----
+Version bump.
+
+----- version 3.5.3-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

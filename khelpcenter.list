@@ -5,9 +5,7 @@ usr/bin/khc_htsearch.pl
 usr/bin/khc_indexbuilder.exe
 usr/bin/khc_mansearch.pl
 usr/bin/khelpcenter.exe
-usr/lib/kde3/khelpcenter.dll
-usr/lib/kde3/khelpcenter.la
-usr/lib/libkdeinit_khelpcenter.dll.a
+usr/lib/kde3/khelpcenter.*
 usr/lib/libkdeinit_khelpcenter.la
 usr/share/applications/kde/Help.desktop
 usr/share/apps/khelpcenter/
@@ -15,3 +13,4 @@ usr/share/config.kcfg/khelpcenter.kcfg
 usr/share/doc/HTML/en/khelpcenter/
 usr/share/icons/hicolor/*/apps/khelpcenter.*
 usr/share/services/khelpcenter.desktop
+usr/share/doc/Cygwin/khelpcenter-3*.README

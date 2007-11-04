@@ -1,0 +1,5 @@
+category: KDE
+requires: kdelibs kdesktop kicker konqueror kpersonalizer ksmserver ksplash kwin xmessage xprop xrdb xset xsetroot
+external-source: kdebase
+sdesc: "KDE desktop startup script"
+ldesc: "KDE base desktop packages"

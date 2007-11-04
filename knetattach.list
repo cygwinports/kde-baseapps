@@ -3,3 +3,4 @@ usr/share/applications/kde/knetattach.desktop
 usr/share/doc/HTML/en/knetattach/
 usr/share/icons/hicolor/*/apps/knetattach.*
 usr/share/doc/knetattach-*/
+usr/share/doc/Cygwin/knetattach-3*.README

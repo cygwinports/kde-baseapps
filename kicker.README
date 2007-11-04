@@ -1,0 +1,377 @@
+kicker
+------------------------------------------
+KDE desktop panel
+
+Common runtime requirements:
+  cygwin-1.5.24-2
+  kdelibs4-3.5.8-1
+  libX11_6-1.1.3-1
+  qt3-3.3.8-3
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  perl-5.8.7-5
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.kde.org/
+
+Canonical download:
+  ftp://ftp.kde.org/pub/kde/stable/3.5.8/src/
+
+-------------------------------------------
+
+Build instructions:
+  unpack kdebase-3.5.8-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./kdebase-3.5.8-X.cygport all
+
+This will create:
+  /usr/src/kdebase-3.5.8-X-src.tar.bz2
+  /usr/src/kdebase-3.5.8-X.tar.bz2
+
+  /usr/src/drkonqi-3.5.8-X.tar.bz2
+  /usr/src/kappfinder-3.5.8-X.tar.bz2
+  /usr/src/kate-3.5.8-X.tar.bz2
+  /usr/src/kcheckpass-3.5.8-X.tar.bz2
+  /usr/src/kcminit-3.5.8-X.tar.bz2
+  /usr/src/kcontrol-3.5.8-X.tar.bz2
+  /usr/src/kdcop-3.5.8-X.tar.bz2
+  /usr/src/kdebase-data-3.5.8-X.tar.bz2
+  /usr/src/kdebugdialog-3.5.8-X.tar.bz2
+  /usr/src/kdeprint-3.5.8-X.tar.bz2
+  /usr/src/kdesktop-3.5.8-X.tar.bz2
+  /usr/src/kdesu-3.5.8-X.tar.bz2
+  /usr/src/kdialog-3.5.8-X.tar.bz2
+  /usr/src/kdm-3.5.8-X.tar.bz2
+  /usr/src/kfind-3.5.8-X.tar.bz2
+  /usr/src/khelpcenter-3.5.8-X.tar.bz2
+  /usr/src/khotkeys-3.5.8-X.tar.bz2
+  /usr/src/kicker-3.5.8-X.tar.bz2
+  /usr/src/kioslave-3.5.8-X.tar.bz2
+  /usr/src/klipper-3.5.8-X.tar.bz2
+  /usr/src/kmenuedit-3.5.8-X.tar.bz2
+  /usr/src/knetattach-3.5.8-X.tar.bz2
+  /usr/src/konqueror-3.5.8-X.tar.bz2
+  /usr/src/konsole-3.5.8-X.tar.bz2
+  /usr/src/kpager-3.5.8-X.tar.bz2
+  /usr/src/kpersonalizer-3.5.8-X.tar.bz2
+  /usr/src/kreadconfig-3.5.8-X.tar.bz2
+  /usr/src/kscreensaver-3.5.8-X.tar.bz2
+  /usr/src/ksmserver-3.5.8-X.tar.bz2
+  /usr/src/ksplash-3.5.8-X.tar.bz2
+  /usr/src/ksysguard-3.5.8-X.tar.bz2
+  /usr/src/kstart-3.5.8-X.tar.bz2
+  /usr/src/ksystraycmd-3.5.8-X.tar.bz2
+  /usr/src/ktip-3.5.8-X.tar.bz2
+  /usr/src/kwin-3.5.8-X.tar.bz2
+  /usr/src/kxkb-3.5.8-X.tar.bz2
+  /usr/src/libkonq-3.5.8-X.tar.bz2
+  /usr/src/nsplugins-3.5.8-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(kicker)
+  /usr/bin/appletproxy.exe
+  /usr/bin/cygkasbar-1.dll
+  /usr/bin/cygkdeinit_appletproxy.dll
+  /usr/bin/cygkdeinit_extensionproxy.dll
+  /usr/bin/cygkdeinit_kicker.dll
+  /usr/bin/cygkickermain-1.dll
+  /usr/bin/cygtaskbar-1.dll
+  /usr/bin/cygtaskmanager-1.dll
+  /usr/bin/extensionproxy.exe
+  /usr/bin/kasbar.exe
+  /usr/bin/kicker.exe
+  /usr/lib/kconf_update_bin/kicker-3.4-reverseLayout.exe
+  /usr/lib/kde3/appletproxy.dll
+  /usr/lib/kde3/appletproxy.la
+  /usr/lib/kde3/clock_panelapplet.dll
+  /usr/lib/kde3/clock_panelapplet.la
+  /usr/lib/kde3/dockbar_panelextension.dll
+  /usr/lib/kde3/dockbar_panelextension.la
+  /usr/lib/kde3/extensionproxy.dll
+  /usr/lib/kde3/extensionproxy.la
+  /usr/lib/kde3/kasbar_panelextension.dll
+  /usr/lib/kde3/kasbar_panelextension.la
+  /usr/lib/kde3/kicker.dll
+  /usr/lib/kde3/kicker.la
+  /usr/lib/kde3/kickermenu_find.dll
+  /usr/lib/kde3/kickermenu_find.la
+  /usr/lib/kde3/kickermenu_kate.dll
+  /usr/lib/kde3/kickermenu_kate.la
+  /usr/lib/kde3/kickermenu_kdeprint.dll
+  /usr/lib/kde3/kickermenu_kdeprint.la
+  /usr/lib/kde3/kickermenu_konqueror.dll
+  /usr/lib/kde3/kickermenu_konqueror.la
+  /usr/lib/kde3/kickermenu_konsole.dll
+  /usr/lib/kde3/kickermenu_konsole.la
+  /usr/lib/kde3/kickermenu_prefmenu.dll
+  /usr/lib/kde3/kickermenu_prefmenu.la
+  /usr/lib/kde3/kickermenu_recentdocs.dll
+  /usr/lib/kde3/kickermenu_recentdocs.la
+  /usr/lib/kde3/kickermenu_remotemenu.dll
+  /usr/lib/kde3/kickermenu_remotemenu.la
+  /usr/lib/kde3/kickermenu_systemmenu.dll
+  /usr/lib/kde3/kickermenu_systemmenu.la
+  /usr/lib/kde3/launcher_panelapplet.dll
+  /usr/lib/kde3/launcher_panelapplet.la
+  /usr/lib/kde3/lockout_panelapplet.dll
+  /usr/lib/kde3/lockout_panelapplet.la
+  /usr/lib/kde3/media_panelapplet.dll
+  /usr/lib/kde3/media_panelapplet.la
+  /usr/lib/kde3/menu_panelapplet.dll
+  /usr/lib/kde3/menu_panelapplet.la
+  /usr/lib/kde3/minipager_panelapplet.dll
+  /usr/lib/kde3/minipager_panelapplet.la
+  /usr/lib/kde3/naughty_panelapplet.dll
+  /usr/lib/kde3/naughty_panelapplet.la
+  /usr/lib/kde3/run_panelapplet.dll
+  /usr/lib/kde3/run_panelapplet.la
+  /usr/lib/kde3/sidebar_panelextension.dll
+  /usr/lib/kde3/sidebar_panelextension.la
+  /usr/lib/kde3/systemtray_panelapplet.dll
+  /usr/lib/kde3/systemtray_panelapplet.la
+  /usr/lib/kde3/taskbar_panelapplet.dll
+  /usr/lib/kde3/taskbar_panelapplet.la
+  /usr/lib/kde3/taskbar_panelextension.dll
+  /usr/lib/kde3/taskbar_panelextension.la
+  /usr/lib/kde3/trash_panelapplet.dll
+  /usr/lib/kde3/trash_panelapplet.la
+  /usr/lib/libkasbar.dll.a
+  /usr/lib/libkasbar.la
+  /usr/lib/libkdeinit_appletproxy.la
+  /usr/lib/libkdeinit_extensionproxy.la
+  /usr/lib/libkdeinit_kicker.la
+  /usr/lib/libkickermain.dll.a
+  /usr/lib/libkickermain.la
+  /usr/lib/libtaskbar.dll.a
+  /usr/lib/libtaskbar.la
+  /usr/lib/libtaskmanager.dll.a
+  /usr/lib/libtaskmanager.la
+  /usr/share/applications/kde/kcmkicker.desktop
+  /usr/share/apps/clockapplet/pics/lcd.png
+  /usr/share/apps/kconf_update/kicker-3.1-properSizeSetting.pl
+  /usr/share/apps/kconf_update/kicker-3.5-kconfigXTize.pl
+  /usr/share/apps/kconf_update/kicker-3.5-taskbarEnums.pl
+  /usr/share/apps/kconf_update/kickerrc.upd
+  /usr/share/apps/kicker/applets/clockapplet.desktop
+  /usr/share/apps/kicker/applets/lockout.desktop
+  /usr/share/apps/kicker/applets/mediaapplet.desktop
+  /usr/share/apps/kicker/applets/menuapplet.desktop
+  /usr/share/apps/kicker/applets/minipagerapplet.desktop
+  /usr/share/apps/kicker/applets/naughtyapplet.desktop
+  /usr/share/apps/kicker/applets/quicklauncher.desktop
+  /usr/share/apps/kicker/applets/runapplet.desktop
+  /usr/share/apps/kicker/applets/systemtrayapplet.desktop
+  /usr/share/apps/kicker/applets/taskbarapplet.desktop
+  /usr/share/apps/kicker/applets/trashapplet.desktop
+  /usr/share/apps/kicker/builtins/bookmarks.desktop
+  /usr/share/apps/kicker/builtins/browser.desktop
+  /usr/share/apps/kicker/builtins/desktop.desktop
+  /usr/share/apps/kicker/builtins/exec.desktop
+  /usr/share/apps/kicker/builtins/kmenu.desktop
+  /usr/share/apps/kicker/builtins/windowlist.desktop
+  /usr/share/apps/kicker/default-apps
+  /usr/share/apps/kicker/extensions/childpanelextension.desktop
+  /usr/share/apps/kicker/extensions/dockbarextension.desktop
+  /usr/share/apps/kicker/extensions/kasbarextension.desktop
+  /usr/share/apps/kicker/extensions/sidebarextension.desktop
+  /usr/share/apps/kicker/extensions/taskbarextension.desktop
+  /usr/share/apps/kicker/icons/crystalsvg/16x16/actions/modified.png
+  /usr/share/apps/kicker/icons/locolor/16x16/actions/modified.png
+  /usr/share/apps/kicker/menuext/find/kfind.desktop
+  /usr/share/apps/kicker/menuext/find/websearch.desktop
+  /usr/share/apps/kicker/menuext/find.desktop
+  /usr/share/apps/kicker/menuext/konquerormenu.desktop
+  /usr/share/apps/kicker/menuext/konsolemenu.desktop
+  /usr/share/apps/kicker/menuext/prefmenu.desktop
+  /usr/share/apps/kicker/menuext/printmenu.desktop
+  /usr/share/apps/kicker/menuext/recentdocs.desktop
+  /usr/share/apps/kicker/menuext/remotemenu.desktop
+  /usr/share/apps/kicker/menuext/systemmenu.desktop
+  /usr/share/apps/kicker/pics/disk1.png
+  /usr/share/apps/kicker/pics/disk10.png
+  /usr/share/apps/kicker/pics/disk2.png
+  /usr/share/apps/kicker/pics/disk3.png
+  /usr/share/apps/kicker/pics/disk4.png
+  /usr/share/apps/kicker/pics/disk5.png
+  /usr/share/apps/kicker/pics/disk6.png
+  /usr/share/apps/kicker/pics/disk7.png
+  /usr/share/apps/kicker/pics/disk8.png
+  /usr/share/apps/kicker/pics/disk9.png
+  /usr/share/apps/kicker/pics/kside.png
+  /usr/share/apps/kicker/pics/kside_tile.png
+  /usr/share/apps/kicker/tiles/blue_wood_large_down.png
+  /usr/share/apps/kicker/tiles/blue_wood_large_up.png
+  /usr/share/apps/kicker/tiles/blue_wood_normal_down.png
+  /usr/share/apps/kicker/tiles/blue_wood_normal_up.png
+  /usr/share/apps/kicker/tiles/blue_wood_tiny_down.png
+  /usr/share/apps/kicker/tiles/blue_wood_tiny_up.png
+  /usr/share/apps/kicker/tiles/green_wood_large_down.png
+  /usr/share/apps/kicker/tiles/green_wood_large_up.png
+  /usr/share/apps/kicker/tiles/green_wood_normal_down.png
+  /usr/share/apps/kicker/tiles/green_wood_normal_up.png
+  /usr/share/apps/kicker/tiles/green_wood_tiny_down.png
+  /usr/share/apps/kicker/tiles/green_wood_tiny_up.png
+  /usr/share/apps/kicker/tiles/KDE_button_large_down.png
+  /usr/share/apps/kicker/tiles/KDE_button_large_up.png
+  /usr/share/apps/kicker/tiles/KDE_button_normal_down.png
+  /usr/share/apps/kicker/tiles/KDE_button_normal_up.png
+  /usr/share/apps/kicker/tiles/KDE_button_tiny_down.png
+  /usr/share/apps/kicker/tiles/KDE_button_tiny_up.png
+  /usr/share/apps/kicker/tiles/light_gray_large_down.png
+  /usr/share/apps/kicker/tiles/light_gray_large_up.png
+  /usr/share/apps/kicker/tiles/light_gray_normal_up.png
+  /usr/share/apps/kicker/tiles/light_gray_tiny_down.png
+  /usr/share/apps/kicker/tiles/light_gray_tiny_up.png
+  /usr/share/apps/kicker/tiles/light_green_large_down.png
+  /usr/share/apps/kicker/tiles/light_green_large_up.png
+  /usr/share/apps/kicker/tiles/light_green_normal_down.png
+  /usr/share/apps/kicker/tiles/light_green_normal_up.png
+  /usr/share/apps/kicker/tiles/light_green_tiny_down.png
+  /usr/share/apps/kicker/tiles/light_green_tiny_up.png
+  /usr/share/apps/kicker/tiles/light_pastel_large_down.png
+  /usr/share/apps/kicker/tiles/light_pastel_large_up.png
+  /usr/share/apps/kicker/tiles/light_pastel_normal_up.png
+  /usr/share/apps/kicker/tiles/light_pastel_tiny_down.png
+  /usr/share/apps/kicker/tiles/light_pastel_tiny_up.png
+  /usr/share/apps/kicker/tiles/light_purple_large_down.png
+  /usr/share/apps/kicker/tiles/light_purple_large_up.png
+  /usr/share/apps/kicker/tiles/light_purple_normal_down.png
+  /usr/share/apps/kicker/tiles/light_purple_normal_up.png
+  /usr/share/apps/kicker/tiles/light_purple_tiny_down.png
+  /usr/share/apps/kicker/tiles/light_purple_tiny_up.png
+  /usr/share/apps/kicker/tiles/nuts_and_bolts_large_down.png
+  /usr/share/apps/kicker/tiles/nuts_and_bolts_large_up.png
+  /usr/share/apps/kicker/tiles/nuts_and_bolts_normal_down.png
+  /usr/share/apps/kicker/tiles/nuts_and_bolts_normal_up.png
+  /usr/share/apps/kicker/tiles/nuts_and_bolts_tiny_down.png
+  /usr/share/apps/kicker/tiles/nuts_and_bolts_tiny_up.png
+  /usr/share/apps/kicker/tiles/red_wood_large_down.png
+  /usr/share/apps/kicker/tiles/red_wood_large_up.png
+  /usr/share/apps/kicker/tiles/red_wood_normal_down.png
+  /usr/share/apps/kicker/tiles/red_wood_normal_up.png
+  /usr/share/apps/kicker/tiles/red_wood_tiny_down.png
+  /usr/share/apps/kicker/tiles/red_wood_tiny_up.png
+  /usr/share/apps/kicker/tiles/solid_blue_large_down.png
+  /usr/share/apps/kicker/tiles/solid_blue_large_up.png
+  /usr/share/apps/kicker/tiles/solid_blue_normal_down.png
+  /usr/share/apps/kicker/tiles/solid_blue_normal_up.png
+  /usr/share/apps/kicker/tiles/solid_blue_tiny_down.png
+  /usr/share/apps/kicker/tiles/solid_blue_tiny_up.png
+  /usr/share/apps/kicker/tiles/solid_gray_large_down.png
+  /usr/share/apps/kicker/tiles/solid_gray_large_up.png
+  /usr/share/apps/kicker/tiles/solid_gray_normal_down.png
+  /usr/share/apps/kicker/tiles/solid_gray_normal_up.png
+  /usr/share/apps/kicker/tiles/solid_gray_tiny_down.png
+  /usr/share/apps/kicker/tiles/solid_gray_tiny_up.png
+  /usr/share/apps/kicker/tiles/solid_green_large_down.png
+  /usr/share/apps/kicker/tiles/solid_green_large_up.png
+  /usr/share/apps/kicker/tiles/solid_green_normal_down.png
+  /usr/share/apps/kicker/tiles/solid_green_normal_up.png
+  /usr/share/apps/kicker/tiles/solid_green_tiny_down.png
+  /usr/share/apps/kicker/tiles/solid_green_tiny_up.png
+  /usr/share/apps/kicker/tiles/solid_orange_large_down.png
+  /usr/share/apps/kicker/tiles/solid_orange_large_up.png
+  /usr/share/apps/kicker/tiles/solid_orange_normal_down.png
+  /usr/share/apps/kicker/tiles/solid_orange_normal_up.png
+  /usr/share/apps/kicker/tiles/solid_orange_tiny_down.png
+  /usr/share/apps/kicker/tiles/solid_orange_tiny_up.png
+  /usr/share/apps/kicker/tiles/solid_pastel_large_down.png
+  /usr/share/apps/kicker/tiles/solid_pastel_large_up.png
+  /usr/share/apps/kicker/tiles/solid_pastel_normal_down.png
+  /usr/share/apps/kicker/tiles/solid_pastel_normal_up.png
+  /usr/share/apps/kicker/tiles/solid_pastel_tiny_down.png
+  /usr/share/apps/kicker/tiles/solid_pastel_tiny_up.png
+  /usr/share/apps/kicker/tiles/solid_purple_large_down.png
+  /usr/share/apps/kicker/tiles/solid_purple_large_up.png
+  /usr/share/apps/kicker/tiles/solid_purple_normal_down.png
+  /usr/share/apps/kicker/tiles/solid_purple_normal_up.png
+  /usr/share/apps/kicker/tiles/solid_purple_tiny_down.png
+  /usr/share/apps/kicker/tiles/solid_purple_tiny_up.png
+  /usr/share/apps/kicker/tiles/solid_red_large_down.png
+  /usr/share/apps/kicker/tiles/solid_red_large_up.png
+  /usr/share/apps/kicker/tiles/solid_red_normal_down.png
+  /usr/share/apps/kicker/tiles/solid_red_normal_up.png
+  /usr/share/apps/kicker/tiles/solid_red_tiny_down.png
+  /usr/share/apps/kicker/tiles/solid_red_tiny_up.png
+  /usr/share/apps/kicker/tiles/solid_tigereye_large_down.png
+  /usr/share/apps/kicker/tiles/solid_tigereye_large_up.png
+  /usr/share/apps/kicker/tiles/solid_tigereye_normal_down.png
+  /usr/share/apps/kicker/tiles/solid_tigereye_normal_up.png
+  /usr/share/apps/kicker/tiles/solid_tigereye_tiny_down.png
+  /usr/share/apps/kicker/tiles/solid_tigereye_tiny_up.png
+  /usr/share/apps/kicker/wallpapers/deck_plate.png
+  /usr/share/apps/kicker/wallpapers/default.png
+  /usr/share/apps/kicker/wallpapers/green_line.png
+  /usr/share/apps/kicker/wallpapers/rail.png
+  /usr/share/apps/naughtyapplet/pics/naughty-happy.png
+  /usr/share/apps/naughtyapplet/pics/naughty-sad.png
+  /usr/share/autostart/panel.desktop
+  /usr/share/config.kcfg/kickerSettings.kcfg
+  /usr/share/config.kcfg/launcherapplet.kcfg
+  /usr/share/config.kcfg/taskbar.kcfg
+  /usr/share/doc/HTML/en/kicker/bookmarks_icon.png
+  /usr/share/doc/HTML/en/kicker/desktop_icon.png
+  /usr/share/doc/HTML/en/kicker/index.cache.bz2
+  /usr/share/doc/HTML/en/kicker/index.docbook
+  /usr/share/doc/HTML/en/kicker/k_menu_icon.png
+  /usr/share/doc/HTML/en/kicker/man-appletproxy.1.docbook
+  /usr/share/doc/HTML/en/kicker/man-kicker.1.docbook
+  /usr/share/doc/HTML/en/kicker/printsys_icon.png
+  /usr/share/doc/HTML/en/kicker/quickbrowser_icon.png
+  /usr/share/doc/HTML/en/kicker/recent_docs_icon.png
+  /usr/share/doc/HTML/en/kicker/screenshot_left.png
+  /usr/share/doc/HTML/en/kicker/screenshot_right.png
+  /usr/share/doc/HTML/en/kicker/taskbar_group.png
+  /usr/share/doc/HTML/en/kicker/terminals_icon.png
+  /usr/share/doc/HTML/en/kicker/windowlist_icon.png
+  /usr/share/icons/crystalsvg/16x16/apps/kdisknav.png
+  /usr/share/icons/crystalsvg/16x16/apps/kicker.png
+  /usr/share/icons/crystalsvg/16x16/apps/panel.png
+  /usr/share/icons/crystalsvg/16x16/apps/window_list.png
+  /usr/share/icons/crystalsvg/32x32/apps/kdisknav.png
+  /usr/share/icons/crystalsvg/32x32/apps/window_list.png
+  /usr/share/icons/crystalsvg/48x48/apps/kdisknav.png
+  /usr/share/icons/crystalsvg/48x48/apps/window_list.png
+
+------------------
+
+Port Notes:
+
+----- version 3.5.8-1 -----
+Version bump.
+
+----- version 3.5.7-1 -----
+Version bump.
+
+----- version 3.5.6-1 -----
+Version bump.
+
+----- version 3.5.5-1 -----
+Version bump.
+
+----- version 3.5.4-1 -----
+Version bump.
+
+----- version 3.5.3-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

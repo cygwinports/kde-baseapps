@@ -14,6 +14,9 @@ usr/share/applnk/.hidden/socks.desktop
 usr/share/applnk/.hidden/userinfo.desktop
 usr/share/applnk/.hidden/virtualdesktops.desktop
 usr/share/desktop-directories/
+usr/share/doc/HTML/en/kdebase-apidocs/*.*
+usr/share/doc/HTML/en/kdebase-apidocs/installdox-slow
+usr/share/doc/HTML/en/kdebase-apidocs/subdirs
 usr/share/icons/crystalsvg/128x128/apps/acroread.png
 usr/share/icons/crystalsvg/128x128/apps/applixware.png
 usr/share/icons/crystalsvg/128x128/apps/clanbomber.png
@@ -407,3 +410,4 @@ usr/share/icons/crystalsvg/scalable/apps/xclock.svgz
 usr/share/icons/crystalsvg/scalable/apps/xeyes.svgz
 usr/share/icons/crystalsvg/scalable/apps/xpaint.svgz
 usr/share/locale/l10n/
+usr/share/doc/Cygwin/kdebase-data-3*.README

@@ -3,10 +3,8 @@ usr/bin/cygksgrd-1.dll
 usr/bin/kpm.exe
 usr/bin/ksysguard.exe
 usr/include/kde/ksgrd/
-usr/lib/kde3/sysguard_panelapplet.dll
-usr/lib/kde3/sysguard_panelapplet.la
-usr/lib/libksgrd.dll.a
-usr/lib/libksgrd.la
+usr/lib/kde3/sysguard_panelapplet.*
+usr/lib/libksgrd.*
 usr/share/applications/kde/ksysguard.desktop
 usr/share/apps/kicker/applets/ksysguardapplet.desktop
 usr/share/apps/ksysguard/
@@ -14,3 +12,4 @@ usr/share/doc/HTML/en/ksysguard/
 usr/share/icons/crystalsvg/*/apps/ksysguard.png
 usr/share/mimelnk/application/x-ksysguard.desktop
 usr/share/doc/ksysguard-*/
+usr/share/doc/Cygwin/ksysguard-3*.README

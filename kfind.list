@@ -8,3 +8,4 @@ usr/share/icons/hicolor/*/apps/kfind.png
 usr/share/services/kfindpart.desktop
 usr/share/servicetypes/findpart.desktop
 usr/share/doc/kfind-*/
+usr/share/doc/Cygwin/kfind-3*.README

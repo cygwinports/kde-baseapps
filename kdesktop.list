@@ -6,9 +6,7 @@ usr/bin/kwebdesktop.exe
 usr/include/kde/KBackgroundIface.h
 usr/include/kde/KDesktopIface.h
 usr/include/kde/KScreensaverIface.h
-usr/lib/kde3/kdesktop.dll
-usr/lib/kde3/kdesktop.la
-usr/lib/libkdeinit_kdesktop.dll.a
+usr/lib/kde3/kdesktop.*
 usr/lib/libkdeinit_kdesktop.la
 usr/share/apps/kdesktop/
 usr/share/apps/konqueror/servicemenus/kdesktopSetAsBackground.desktop
@@ -48,3 +46,4 @@ usr/share/templates/linkZIP.desktop
 usr/share/templates/TextFile.desktop
 usr/share/wallpapers/
 usr/share/doc/kdesktop-*/
+usr/share/doc/Cygwin/kdesktop-3*.README

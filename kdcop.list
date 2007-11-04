@@ -2,3 +2,4 @@ usr/bin/kdcop.exe
 usr/share/apps/kdcop/kdcopui.rc
 usr/share/doc/HTML/en/kdcop/
 usr/share/doc/kdcop-*/
+usr/share/doc/Cygwin/kdcop-3*.README

@@ -1,0 +1,407 @@
+kwin
+------------------------------------------
+KDE desktop window manager
+
+Common runtime requirements:
+  cygwin-1.5.24-2
+  kdelibs4-3.5.8-1
+  libX11_6-1.1.3-1
+  libXdamage1-1.1.1-1
+  libXext6-1.0.3-1
+  libXfixes3-4.0.3-1
+  libXrender1-0.9.4-1
+  qt3-3.3.8-3
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  perl-5.8.7-5
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.kde.org/
+
+Canonical download:
+  ftp://ftp.kde.org/pub/kde/stable/3.5.8/src/
+
+-------------------------------------------
+
+Build instructions:
+  unpack kdebase-3.5.8-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./kdebase-3.5.8-X.cygport all
+
+This will create:
+  /usr/src/kdebase-3.5.8-X-src.tar.bz2
+  /usr/src/kdebase-3.5.8-X.tar.bz2
+
+  /usr/src/drkonqi-3.5.8-X.tar.bz2
+  /usr/src/kappfinder-3.5.8-X.tar.bz2
+  /usr/src/kate-3.5.8-X.tar.bz2
+  /usr/src/kcheckpass-3.5.8-X.tar.bz2
+  /usr/src/kcminit-3.5.8-X.tar.bz2
+  /usr/src/kcontrol-3.5.8-X.tar.bz2
+  /usr/src/kdcop-3.5.8-X.tar.bz2
+  /usr/src/kdebase-data-3.5.8-X.tar.bz2
+  /usr/src/kdebugdialog-3.5.8-X.tar.bz2
+  /usr/src/kdeprint-3.5.8-X.tar.bz2
+  /usr/src/kdesktop-3.5.8-X.tar.bz2
+  /usr/src/kdesu-3.5.8-X.tar.bz2
+  /usr/src/kdialog-3.5.8-X.tar.bz2
+  /usr/src/kdm-3.5.8-X.tar.bz2
+  /usr/src/kfind-3.5.8-X.tar.bz2
+  /usr/src/khelpcenter-3.5.8-X.tar.bz2
+  /usr/src/khotkeys-3.5.8-X.tar.bz2
+  /usr/src/kicker-3.5.8-X.tar.bz2
+  /usr/src/kioslave-3.5.8-X.tar.bz2
+  /usr/src/klipper-3.5.8-X.tar.bz2
+  /usr/src/kmenuedit-3.5.8-X.tar.bz2
+  /usr/src/knetattach-3.5.8-X.tar.bz2
+  /usr/src/konqueror-3.5.8-X.tar.bz2
+  /usr/src/konsole-3.5.8-X.tar.bz2
+  /usr/src/kpager-3.5.8-X.tar.bz2
+  /usr/src/kpersonalizer-3.5.8-X.tar.bz2
+  /usr/src/kreadconfig-3.5.8-X.tar.bz2
+  /usr/src/kscreensaver-3.5.8-X.tar.bz2
+  /usr/src/ksmserver-3.5.8-X.tar.bz2
+  /usr/src/ksplash-3.5.8-X.tar.bz2
+  /usr/src/ksysguard-3.5.8-X.tar.bz2
+  /usr/src/kstart-3.5.8-X.tar.bz2
+  /usr/src/ksystraycmd-3.5.8-X.tar.bz2
+  /usr/src/ktip-3.5.8-X.tar.bz2
+  /usr/src/kwin-3.5.8-X.tar.bz2
+  /usr/src/kxkb-3.5.8-X.tar.bz2
+  /usr/src/libkonq-3.5.8-X.tar.bz2
+  /usr/src/nsplugins-3.5.8-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(kwin)
+  /usr/bin/cygkdecorations-1.dll
+  /usr/bin/cygkdeinit_kwin.dll
+  /usr/bin/cygkdeinit_kwin_rules_dialog.dll
+  /usr/bin/kwin.exe
+  /usr/bin/kwin_killer_helper.exe
+  /usr/bin/kwin_rules_dialog.exe
+  /usr/include/kde/kcommondecoration.h
+  /usr/include/kde/kdecoration.h
+  /usr/include/kde/kdecorationfactory.h
+  /usr/include/kde/kdecoration_p.h
+  /usr/include/kde/kdecoration_plugins_p.h
+  /usr/include/kde/kwin/client.h
+  /usr/include/kde/kwin/kwinbutton.h
+  /usr/include/kde/kwin/options.h
+  /usr/include/kde/kwin/workspace.h
+  /usr/include/kde/KWinInterface.h
+  /usr/lib/kconf_update_bin/kwin_update_default_rules.exe
+  /usr/lib/kconf_update_bin/kwin_update_window_settings.exe
+  /usr/lib/kde3/kcm_kwindecoration.dll
+  /usr/lib/kde3/kcm_kwindecoration.la
+  /usr/lib/kde3/kcm_kwinoptions.dll
+  /usr/lib/kde3/kcm_kwinoptions.la
+  /usr/lib/kde3/kcm_kwinrules.dll
+  /usr/lib/kde3/kcm_kwinrules.la
+  /usr/lib/kde3/kwin.dll
+  /usr/lib/kde3/kwin.la
+  /usr/lib/kde3/kwin3_b2.dll
+  /usr/lib/kde3/kwin3_b2.la
+  /usr/lib/kde3/kwin3_default.dll
+  /usr/lib/kde3/kwin3_default.la
+  /usr/lib/kde3/kwin3_keramik.dll
+  /usr/lib/kde3/kwin3_keramik.la
+  /usr/lib/kde3/kwin3_laptop.dll
+  /usr/lib/kde3/kwin3_laptop.la
+  /usr/lib/kde3/kwin3_modernsys.dll
+  /usr/lib/kde3/kwin3_modernsys.la
+  /usr/lib/kde3/kwin3_plastik.dll
+  /usr/lib/kde3/kwin3_plastik.la
+  /usr/lib/kde3/kwin3_quartz.dll
+  /usr/lib/kde3/kwin3_quartz.la
+  /usr/lib/kde3/kwin3_redmond.dll
+  /usr/lib/kde3/kwin3_redmond.la
+  /usr/lib/kde3/kwin3_web.dll
+  /usr/lib/kde3/kwin3_web.la
+  /usr/lib/kde3/kwin_b2_config.dll
+  /usr/lib/kde3/kwin_b2_config.la
+  /usr/lib/kde3/kwin_default_config.dll
+  /usr/lib/kde3/kwin_default_config.la
+  /usr/lib/kde3/kwin_keramik_config.dll
+  /usr/lib/kde3/kwin_keramik_config.la
+  /usr/lib/kde3/kwin_modernsys_config.dll
+  /usr/lib/kde3/kwin_modernsys_config.la
+  /usr/lib/kde3/kwin_plastik_config.dll
+  /usr/lib/kde3/kwin_plastik_config.la
+  /usr/lib/kde3/kwin_quartz_config.dll
+  /usr/lib/kde3/kwin_quartz_config.la
+  /usr/lib/kde3/kwin_rules_dialog.dll
+  /usr/lib/kde3/kwin_rules_dialog.la
+  /usr/lib/libkdecorations.dll.a
+  /usr/lib/libkdecorations.la
+  /usr/lib/libkdeinit_kwin.la
+  /usr/lib/libkdeinit_kwin_rules_dialog.la
+  /usr/share/applications/kde/kwindecoration.desktop
+  /usr/share/applications/kde/kwinoptions.desktop
+  /usr/share/applications/kde/kwinrules.desktop
+  /usr/share/applnk/.hidden/kwinactions.desktop
+  /usr/share/applnk/.hidden/kwinadvanced.desktop
+  /usr/share/applnk/.hidden/kwinfocus.desktop
+  /usr/share/applnk/.hidden/kwinmoving.desktop
+  /usr/share/applnk/.hidden/kwintranslucency.desktop
+  /usr/share/apps/kconf_update/kwin.upd
+  /usr/share/apps/kconf_update/kwin3_plugin.pl
+  /usr/share/apps/kconf_update/kwin3_plugin.upd
+  /usr/share/apps/kconf_update/kwiniconify.upd
+  /usr/share/apps/kconf_update/kwinsticky.upd
+  /usr/share/apps/kconf_update/kwinupdatewindowsettings.upd
+  /usr/share/apps/kconf_update/kwin_focus1.sh
+  /usr/share/apps/kconf_update/kwin_focus1.upd
+  /usr/share/apps/kconf_update/kwin_focus2.sh
+  /usr/share/apps/kconf_update/kwin_focus2.upd
+  /usr/share/apps/kconf_update/kwin_fsp_workarounds_1.upd
+  /usr/share/apps/kconf_update/pluginlibFix.pl
+  /usr/share/apps/kwin/b2.desktop
+  /usr/share/apps/kwin/default_rules/fsp_workarounds_1
+  /usr/share/apps/kwin/eventsrc
+  /usr/share/apps/kwin/keramik.desktop
+  /usr/share/apps/kwin/laptop.desktop
+  /usr/share/apps/kwin/modernsystem.desktop
+  /usr/share/apps/kwin/pics/bluesun.png
+  /usr/share/apps/kwin/pics/close.png
+  /usr/share/apps/kwin/pics/fog-grey.png
+  /usr/share/apps/kwin/pics/fog.png
+  /usr/share/apps/kwin/pics/greenie.dim.png
+  /usr/share/apps/kwin/pics/greenie.light.png
+  /usr/share/apps/kwin/pics/iconify.png
+  /usr/share/apps/kwin/pics/maximize.png
+  /usr/share/apps/kwin/pics/maximizedown.png
+  /usr/share/apps/kwin/pics/menu.png
+  /usr/share/apps/kwin/pics/pindown.png
+  /usr/share/apps/kwin/pics/pinup.png
+  /usr/share/apps/kwin/pics/unknown.png
+  /usr/share/apps/kwin/plastik.desktop
+  /usr/share/apps/kwin/quartz.desktop
+  /usr/share/apps/kwin/redmond.desktop
+  /usr/share/apps/kwin/web.desktop
+  /usr/share/config.kcfg/kwin.kcfg
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/activation_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/annotated.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/atoms_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/atoms_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/bridge_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/bridge_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classes.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInterface-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInterface.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInterface.png
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Application-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Application.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Atoms-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Atoms.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Bridge-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Bridge.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Client-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Client.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1GeometryTip-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1GeometryTip.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1GeometryUpdatesPostponer-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1GeometryUpdatesPostponer.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Group-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Group.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1KillWindow-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1KillWindow.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1KWinSelectionOwner-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1KWinSelectionOwner.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Motif-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Motif.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Notify-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Notify.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Options-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Options.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Placement-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Placement.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1PluginMgr-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1PluginMgr.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1PopupInfo-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1PopupInfo.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1RootInfo-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1RootInfo.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Rules-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Rules.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1SessionManaged-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1SessionManaged.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1SessionSaveDoneHelper-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1SessionSaveDoneHelper.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Shape-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Shape.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1ShortcutDialog-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1ShortcutDialog.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1StackingUpdatesBlocker-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1StackingUpdatesBlocker.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1SystemTrayWindow-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1SystemTrayWindow.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1TabBox-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1TabBox.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1TemporaryAssign-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1TemporaryAssign.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1WindowRules-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1WindowRules.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1WinInfo-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1WinInfo.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Workspace-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Workspace.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/classKWinInternal_1_1Workspace.png
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/client_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/client_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/doxygen.css
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/doxygen.png
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/events_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/files.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/functions.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/functions_enum.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/functions_func.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/functions_rela.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/functions_vars.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/geometrytip_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/geometrytip_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/geometry_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/group_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/group_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/hierarchy.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/index.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/killwindow_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/killwindow_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/kwinbindings_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/KWinInterface_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/layers_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/main_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/main_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/manage_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/namespaceKWinInternal.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/namespacemembers.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/namespacemembers_enum.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/namespacemembers_func.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/namespacemembers_type.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/namespacemembers_vars.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/namespaces.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/notifications_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/notifications_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/options_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/options_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/placement_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/placement_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/plugins_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/plugins_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/popupinfo_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/popupinfo_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/rules_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/rules_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/sm_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/sm_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/structKWinInternal_1_1Motif_1_1MwmHints-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/structKWinInternal_1_1Motif_1_1MwmHints.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/structKWinInternal_1_1SessionInfo-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/structKWinInternal_1_1SessionInfo.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/tabbox_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/tabbox_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/tabs.css
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/tab_b.gif
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/tab_l.gif
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/tab_r.gif
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/useractions_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/utils_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/utils_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/workspace_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/html/workspace_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/kwin.tag
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/annotated.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classes.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKCommonDecoration-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKCommonDecoration.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKCommonDecoration.png
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKCommonDecorationButton-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKCommonDecorationButton.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecoration-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecoration.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecoration.png
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecorationDefines-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecorationDefines.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecorationDefines.png
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecorationFactory-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecorationFactory.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecorationFactory.png
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecorationOptions-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecorationOptions.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecorationOptions.png
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecorationProvides-members.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecorationProvides.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/classKDecorationProvides.png
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/deprecated.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/doxygen.css
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/doxygen.png
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/files.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/functions.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/functions_enum.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/functions_eval.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/functions_func.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/functions_rela.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/functions_vars.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/hierarchy.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/index.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/kcommondecoration_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/kcommondecoration_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/kdecorationfactory_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/kdecorationfactory_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/kdecoration_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/kdecoration_8h-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/kdecoration__plugins__p_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/kdecoration__p_8cpp-source.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/pages.html
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/tabs.css
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/tab_b.gif
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/tab_l.gif
+  /usr/share/doc/HTML/en/kdebase-apidocs/kwin/lib/html/tab_r.gif
+  /usr/share/doc/HTML/en/kompmgr/index.cache.bz2
+  /usr/share/doc/HTML/en/kompmgr/index.docbook
+  /usr/share/icons/crystalsvg/16x16/apps/kwin.png
+  /usr/share/icons/crystalsvg/32x32/apps/kwin.png
+  /usr/share/icons/crystalsvg/48x48/apps/kwin.png
+  /usr/share/sounds/pop.wav
+
+------------------
+
+Port Notes:
+
+----- version 3.5.8-1 -----
+Version bump.
+
+----- version 3.5.7-1 -----
+Version bump.
+
+----- version 3.5.6-1 -----
+Version bump.
+
+----- version 3.5.5-1 -----
+Version bump.
+
+----- version 3.5.4-1 -----
+Version bump.
+
+----- version 3.5.3-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

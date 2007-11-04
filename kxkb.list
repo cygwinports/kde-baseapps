@@ -1,10 +1,7 @@
 usr/bin/cygkdeinit_kxkb.dll
 usr/bin/kxkb.exe
-usr/lib/kde3/kcm_keyboard.dll
-usr/lib/kde3/kcm_keyboard.la
-usr/lib/kde3/kxkb.dll
-usr/lib/kde3/kxkb.la
-usr/lib/libkdeinit_kxkb.dll.a
+usr/lib/kde3/kcm_keyboard.*
+usr/lib/kde3/kxkb.*
 usr/lib/libkdeinit_kxkb.la
 usr/share/applications/kde/keyboard.desktop
 usr/share/applications/kde/keyboard_layout.desktop
@@ -13,3 +10,4 @@ usr/share/doc/HTML/en/kxkb/
 usr/share/doc/kxkb-*/
 usr/share/icons/hicolor/*/apps/kxkb.png
 usr/share/services/kxkb.desktop
+usr/share/doc/Cygwin/kxkb-3*.README

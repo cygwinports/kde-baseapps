@@ -1,4 +1,4 @@
 category: KDE
-requires: cygwin kdelibs4 qt3 crypt
-sdesc: "KDE base desktop packages"
+requires: drkonqi kappfinder kate kcheckpass kcminit kcontrol kdcop kdebase-data kdebase-kioslave kdebase-startkde kdebugdialog kdeprint kdesktop kdesu kdialog kdm kfind khelpcenter khotkeys kicker klipper kmenuedit knetattach konqueror konsole kpager kpersonalizer kreadconfig kscreensaver ksmserver ksplash kstart ksysguard ksystraycmd ktip kwin kxkb libkonq nsplugins
+sdesc: "KDE base desktop meta-package"
 ldesc: "KDE base desktop packages"

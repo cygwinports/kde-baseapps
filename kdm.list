@@ -6,12 +6,9 @@ usr/bin/kdm_config.exe
 usr/bin/kdm_greet.exe
 usr/bin/krootimage.exe
 usr/include/kde/kgreeterplugin.h
-usr/lib/kde3/kcm_useraccount.dll
-usr/lib/kde3/kcm_useraccount.la
-usr/lib/kde3/kgreet_classic.dll
-usr/lib/kde3/kgreet_classic.la
-usr/lib/kde3/kgreet_winbind.dll
-usr/lib/kde3/kgreet_winbind.la
+usr/lib/kde3/kcm_useraccount.*
+usr/lib/kde3/kgreet_classic.*
+usr/lib/kde3/kgreet_winbind.*
 usr/share/apps/kdm/
 usr/share/applications/kde/kcm_useraccount.desktop
 usr/share/applications/kde/kdepasswd.desktop
@@ -21,3 +18,4 @@ usr/share/config.kcfg/kcm_useraccount_pass.kcfg
 usr/share/doc/HTML/en/kdm/
 usr/share/doc/kdm/README
 usr/share/doc/kdm-*/
+usr/share/doc/Cygwin/kdm-3*.README

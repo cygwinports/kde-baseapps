@@ -22,8 +22,7 @@ usr/include/kde/konq_xmlguiclient.h
 usr/include/kde/libkonq_export.h
 usr/lib/kde3/kded_favicons.*
 usr/lib/kde3/konq_sound.*
-usr/lib/libkonq.dll.a
-usr/lib/libkonq.la
+usr/lib/libkonq.*
 usr/share/apps/kbookmark/directory_bookmarkbar.desktop
 usr/share/apps/kconf_update/favicons.upd
 usr/share/apps/kconf_update/move_favicons.sh
@@ -36,3 +35,4 @@ usr/share/doc/HTML/en/kdebase-apidocs/libkonq/
 usr/share/services/kded/favicons.desktop
 usr/share/servicetypes/konqpopupmenuplugin.desktop
 usr/share/doc/libkonq-*/
+usr/share/doc/Cygwin/libkonq-3*.README
