@@ -1,5 +1,5 @@
 category: Shells KDE
-requires: cygwin kdelibs4 qt3
+requires: cygwin kdelibs4 qt3 libcdio
 external-source: kdebase
 sdesc: "KDE dialog"
 ldesc: "KDE base desktop packages"

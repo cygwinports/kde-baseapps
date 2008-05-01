@@ -3,19 +3,19 @@ ksystraycmd
 KDE system tray application launcher
 
 Common runtime requirements:
-  cygwin-1.5.24-2
-  kdelibs4-3.5.8-1
+  cygwin-1.5.25-7
+  kdelibs4-3.5.9-1
   libX11_6-1.1.3-1
-  qt3-3.3.8-3
+  qt3-3.3.8-4
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.24-2
+  cygwin-1.5.25-7
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
+  automake1.10-1.10-1
   binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  cygport-0.3.8-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
   libtool1.5-1.5.23a-2
@@ -27,59 +27,59 @@ Canonical website:
   http://www.kde.org/
 
 Canonical download:
-  ftp://ftp.kde.org/pub/kde/stable/3.5.8/src/
+  ftp://ftp.kde.org/pub/kde/stable/3.5.9/src/
 
 -------------------------------------------
 
 Build instructions:
-  unpack kdebase-3.5.8-X-src.tar.bz2
+  unpack kdebase-3.5.9-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./kdebase-3.5.8-X.cygport all
+  cygport ./kdebase-3.5.9-X.cygport all
 
 This will create:
-  /usr/src/kdebase-3.5.8-X-src.tar.bz2
-  /usr/src/kdebase-3.5.8-X.tar.bz2
+  /usr/src/kdebase-3.5.9-X-src.tar.bz2
+  /usr/src/kdebase-3.5.9-X.tar.bz2
 
-  /usr/src/drkonqi-3.5.8-X.tar.bz2
-  /usr/src/kappfinder-3.5.8-X.tar.bz2
-  /usr/src/kate-3.5.8-X.tar.bz2
-  /usr/src/kcheckpass-3.5.8-X.tar.bz2
-  /usr/src/kcminit-3.5.8-X.tar.bz2
-  /usr/src/kcontrol-3.5.8-X.tar.bz2
-  /usr/src/kdcop-3.5.8-X.tar.bz2
-  /usr/src/kdebase-data-3.5.8-X.tar.bz2
-  /usr/src/kdebugdialog-3.5.8-X.tar.bz2
-  /usr/src/kdeprint-3.5.8-X.tar.bz2
-  /usr/src/kdesktop-3.5.8-X.tar.bz2
-  /usr/src/kdesu-3.5.8-X.tar.bz2
-  /usr/src/kdialog-3.5.8-X.tar.bz2
-  /usr/src/kdm-3.5.8-X.tar.bz2
-  /usr/src/kfind-3.5.8-X.tar.bz2
-  /usr/src/khelpcenter-3.5.8-X.tar.bz2
-  /usr/src/khotkeys-3.5.8-X.tar.bz2
-  /usr/src/kicker-3.5.8-X.tar.bz2
-  /usr/src/kioslave-3.5.8-X.tar.bz2
-  /usr/src/klipper-3.5.8-X.tar.bz2
-  /usr/src/kmenuedit-3.5.8-X.tar.bz2
-  /usr/src/knetattach-3.5.8-X.tar.bz2
-  /usr/src/konqueror-3.5.8-X.tar.bz2
-  /usr/src/konsole-3.5.8-X.tar.bz2
-  /usr/src/kpager-3.5.8-X.tar.bz2
-  /usr/src/kpersonalizer-3.5.8-X.tar.bz2
-  /usr/src/kreadconfig-3.5.8-X.tar.bz2
-  /usr/src/kscreensaver-3.5.8-X.tar.bz2
-  /usr/src/ksmserver-3.5.8-X.tar.bz2
-  /usr/src/ksplash-3.5.8-X.tar.bz2
-  /usr/src/ksysguard-3.5.8-X.tar.bz2
-  /usr/src/kstart-3.5.8-X.tar.bz2
-  /usr/src/ksystraycmd-3.5.8-X.tar.bz2
-  /usr/src/ktip-3.5.8-X.tar.bz2
-  /usr/src/kwin-3.5.8-X.tar.bz2
-  /usr/src/kxkb-3.5.8-X.tar.bz2
-  /usr/src/libkonq-3.5.8-X.tar.bz2
-  /usr/src/nsplugins-3.5.8-X.tar.bz2
+  /usr/src/drkonqi-3.5.9-X.tar.bz2
+  /usr/src/kappfinder-3.5.9-X.tar.bz2
+  /usr/src/kate-3.5.9-X.tar.bz2
+  /usr/src/kcheckpass-3.5.9-X.tar.bz2
+  /usr/src/kcminit-3.5.9-X.tar.bz2
+  /usr/src/kcontrol-3.5.9-X.tar.bz2
+  /usr/src/kdcop-3.5.9-X.tar.bz2
+  /usr/src/kdebase-data-3.5.9-X.tar.bz2
+  /usr/src/kdebugdialog-3.5.9-X.tar.bz2
+  /usr/src/kdeprint-3.5.9-X.tar.bz2
+  /usr/src/kdesktop-3.5.9-X.tar.bz2
+  /usr/src/kdesu-3.5.9-X.tar.bz2
+  /usr/src/kdialog-3.5.9-X.tar.bz2
+  /usr/src/kdm-3.5.9-X.tar.bz2
+  /usr/src/kfind-3.5.9-X.tar.bz2
+  /usr/src/khelpcenter-3.5.9-X.tar.bz2
+  /usr/src/khotkeys-3.5.9-X.tar.bz2
+  /usr/src/kicker-3.5.9-X.tar.bz2
+  /usr/src/kioslave-3.5.9-X.tar.bz2
+  /usr/src/klipper-3.5.9-X.tar.bz2
+  /usr/src/kmenuedit-3.5.9-X.tar.bz2
+  /usr/src/knetattach-3.5.9-X.tar.bz2
+  /usr/src/konqueror-3.5.9-X.tar.bz2
+  /usr/src/konsole-3.5.9-X.tar.bz2
+  /usr/src/kpager-3.5.9-X.tar.bz2
+  /usr/src/kpersonalizer-3.5.9-X.tar.bz2
+  /usr/src/kreadconfig-3.5.9-X.tar.bz2
+  /usr/src/kscreensaver-3.5.9-X.tar.bz2
+  /usr/src/ksmserver-3.5.9-X.tar.bz2
+  /usr/src/ksplash-3.5.9-X.tar.bz2
+  /usr/src/ksysguard-3.5.9-X.tar.bz2
+  /usr/src/kstart-3.5.9-X.tar.bz2
+  /usr/src/ksystraycmd-3.5.9-X.tar.bz2
+  /usr/src/ktip-3.5.9-X.tar.bz2
+  /usr/src/kwin-3.5.9-X.tar.bz2
+  /usr/src/kxkb-3.5.9-X.tar.bz2
+  /usr/src/libkonq-3.5.9-X.tar.bz2
+  /usr/src/nsplugins-3.5.9-X.tar.bz2
 
 -------------------------------------------
 
@@ -87,11 +87,14 @@ Files included in the binary packages:
 
 (ksystraycmd)
   /usr/bin/ksystraycmd.exe
-  /usr/share/doc/ksystraycmd-3.5.8/README
+  /usr/share/doc/ksystraycmd-3.5.9/README
 
 ------------------
 
 Port Notes:
+
+----- version 3.5.9-1 -----
+Version bump.
 
 ----- version 3.5.8-1 -----
 Version bump.

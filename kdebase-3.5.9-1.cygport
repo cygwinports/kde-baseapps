@@ -1,0 +1,22 @@
+inherit kde3
+
+PKG_NAMES="${PN} ${PN}-data ${PN}-kioslaves ${PN}-startkde
+	drkonqi kappfinder kate kcheckpass kcminit kcontrol kdcop kdebugdialog
+	kdeprint kdesktop kdesu kdialog kdm kfind khelpcenter khotkeys kicker
+	klipper kmenuedit knetattach konqueror konsole kpager kpersonalizer
+	kreadconfig kscreensaver ksmserver ksplash kstart ksysguard ksystraycmd
+	ktip kwin kxkb libkonq nsplugins"
+
+PKG_CONTENTS[0]="usr/share/doc/Cygwin/${P}.README usr/share/doc/${P}/"
+
+CYGCONF_ARGS="
+	--with-ldap
+	--with-libusb
+	--with-openexr
+	--without-composite
+	--without-hal
+	--without-krb4 --without-afs
+	--without-libraw1394
+	--without-samba
+	--without-xinerama
+"
