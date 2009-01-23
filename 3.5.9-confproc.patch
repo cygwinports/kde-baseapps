@@ -1,0 +1,11 @@
+--- origsrc/kdebase-3.5.9/kdm/Makefile.am	2005-09-10 03:26:13.000000000 -0500
++++ src/kdebase-3.5.9/kdm/Makefile.am	2008-02-21 09:45:54.078125000 -0600
+@@ -11,6 +11,8 @@
+ 	-@test -n "$(DESTDIR)" || test -z "$(PAM)" || { $(top_srcdir)/mkpamserv $(PAM) && $(top_srcdir)/mkpamserv -P $(PAM)-np; }
+ 
+ config.ci: $(srcdir)/config.def $(srcdir)/confproc.pl
++	rm -f $@
++	touch $@
+ 	$(PERL) -w $(srcdir)/confproc.pl $(srcdir)/config.def $@
+ 
+ CLEANFILES = config.ci

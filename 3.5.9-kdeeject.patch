@@ -1,0 +1,12 @@
+--- origsrc/kdebase-3.5.9/kdeeject/kdeeject	2006-10-01 12:31:56.000000000 -0500
++++ src/kdebase-3.5.9/kdeeject/kdeeject	2008-05-01 07:14:09.890625000 -0500
+@@ -21,6 +21,9 @@
+       dev=`echo $1 | sed -E -e 's#/dev/##' -e 's/([0-9])./\1/'`
+       cdcontrol -f $dev eject >/dev/null 2>&1
+       ;;
++    CYGWIN*)
++      cdda-player -e $1 >/dev/null 2>&1
++      ;;
+     *)
+       # Warning, it has to be either eject 2.0.x or >=2.1.5
+       # Otherwise it doesn't work as expected (it requires a

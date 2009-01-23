@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 qt3 libkonq kicker kdebase-kioslaves
+requires: cygwin kdelibs4 libqt3 libkonq4 kicker kde3-kioslaves-kdebase
 external-source: kdebase
 sdesc: "KDE file explorer and web browser"
 ldesc: "KDE base desktop packages"

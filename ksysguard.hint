@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 qt3 kicker
+requires: cygwin kdelibs4 libqt3 kicker
 external-source: kdebase
 sdesc: "KDE task manager and system monitor"
 ldesc: "KDE base desktop packages"

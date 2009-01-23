@@ -1,0 +1,47 @@
+--- origsrc/kdebase-3.5.9/kioslave/Makefile.am	2005-09-10 03:25:38.000000000 -0500
++++ src/kdebase-3.5.9/kioslave/Makefile.am	2008-02-21 09:45:55.562500000 -0600
+@@ -2,10 +2,14 @@
+ LDAP_SUBDIR=ldap
+ endif
+ 
++if include_kioslave_nfs
++NFS_SUBDIR=nfs
++endif
++
+ if include_kioslave_smb
+ SMB_SUBDIR=smb
+ endif
+ 
+-SUBDIRS = about cgi floppy filter fish info mac man nfs nntp pop3 smtp \
++SUBDIRS = about cgi floppy filter fish info mac man $(NFS_SUBDIR) nntp pop3 smtp \
+   sftp tar finger thumbnail $(LDAP_SUBDIR) $(SMB_SUBDIR) settings trash media \
+   remote home system
+--- origsrc/kdebase-3.5.9/kioslave/nfs/configure.in.in	1969-12-31 18:00:00.000000000 -0600
++++ src/kdebase-3.5.9/kioslave/nfs/configure.in.in	2008-02-21 09:45:56.296875000 -0600
+@@ -0,0 +1,6 @@
++dnl The RPC headers are incompatible with g++ on some platforms
++case "$host_os" in
++	cygwin*|darwin*)  NFS_SUBDIR= ;;
++	*)  NFS_SUBDIR=nfs ;;
++esac
++AM_CONDITIONAL(include_kioslave_nfs, test -n "$NFS_SUBDIR")
+--- origsrc/kdebase-3.5.9/kioslave/nfs/kio_nfs.cpp	2005-10-10 10:04:01.000000000 -0500
++++ src/kdebase-3.5.9/kioslave/nfs/kio_nfs.cpp	2008-02-21 09:45:56.328125000 -0600
+@@ -33,6 +33,17 @@
+ #define PORTMAP
+ #endif
+ #include <rpc/rpc.h> // for rpc calls
++#ifdef __CYGWIN__
++extern "C" {
++AUTH* authunix_create(char *machname, int uid, int gid, int len, int *aup_gids);
++CLIENT* clnttcp_create(struct sockaddr_in *raddr, u_long prog,
++    u_long version, register int *sockp, u_int sendsz, u_int recvsz);
++CLIENT* clntudp_create(struct sockaddr_in *raddr, u_long prog, 
++    u_long version, struct timeval wait, int *sockp);
++void clnt_pcreateerror(char *msg);
++}
++#endif 
++
+ 
+ #include <errno.h>
+ #include <grp.h>

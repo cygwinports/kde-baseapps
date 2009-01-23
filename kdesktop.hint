@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 qt3 libkonq libXss1 kdebase-data
+requires: cygwin kdelibs4 libqt3 libkonq4 libXss1 kdebase-data
 external-source: kdebase
 sdesc: "KDE desktop"
 ldesc: "KDE base desktop packages"

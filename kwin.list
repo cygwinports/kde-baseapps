@@ -60,7 +60,6 @@ usr/share/apps/kconf_update/kwin_focus2.upd
 usr/share/apps/kconf_update/kwin_fsp_workarounds_1.upd
 usr/share/apps/kconf_update/pluginlibFix.pl
 usr/share/apps/kwin/
-usr/share/doc/HTML/en/kdebase-apidocs/kwin/
 usr/share/doc/HTML/en/kompmgr/
 usr/share/config.kcfg/kwin.kcfg
 usr/share/icons/crystalsvg/*/apps/kwin.png

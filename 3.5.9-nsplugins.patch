@@ -1,0 +1,22 @@
+--- origsrc/kdebase-3.5.9/nsplugins/sdk/npruntime.h	2008-02-13 03:40:38.000000000 -0600
++++ src/kdebase-3.5.9/nsplugins/sdk/npruntime.h	2008-02-21 19:55:17.062500000 -0600
+@@ -66,7 +66,6 @@
+ #define _NP_RUNTIME_H_
+ 
+ #include <qglobal.h>
+-typedef Q_UINT32 uint32_t;
+ 
+ #ifdef __cplusplus
+ extern "C" {
+--- origsrc/kdebase-3.5.9/nsplugins/viewer/nsplugin.cpp	2008-02-13 03:40:38.000000000 -0600
++++ src/kdebase-3.5.9/nsplugins/viewer/nsplugin.cpp	2008-02-21 19:54:08.812500000 -0600
+@@ -1237,6 +1237,9 @@
+ extern "C" KDE_EXPORT
+ int XQueryKeymap( Display* dpy, char k[32] )
+ {
++#ifdef __CYGWIN__
++    void *RTLD_NEXT = dlopen("cygX11-6.dll", RTLD_LAZY);
++#endif
+     if( real_xquerykeymap == NULL )
+         real_xquerykeymap = (int (*)( Display*, char[32] )) dlsym( RTLD_NEXT, "XQueryKeymap" );
+     if( has_focus )

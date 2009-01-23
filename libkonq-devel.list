@@ -1,4 +1,3 @@
-usr/bin/cygkonq-4.dll
 usr/include/kde/kfileivi.h
 usr/include/kde/kivdirectoryoverlay.h
 usr/include/kde/knewmenu.h
@@ -20,19 +19,4 @@ usr/include/kde/konq_settings.h
 usr/include/kde/konq_undo.h
 usr/include/kde/konq_xmlguiclient.h
 usr/include/kde/libkonq_export.h
-usr/lib/kde3/kded_favicons.*
-usr/lib/kde3/konq_sound.*
 usr/lib/libkonq.*
-usr/share/apps/kbookmark/directory_bookmarkbar.desktop
-usr/share/apps/kconf_update/favicons.upd
-usr/share/apps/kconf_update/move_favicons.sh
-usr/share/apps/konqueror/pics/arrow_bottomleft.png
-usr/share/apps/konqueror/pics/arrow_bottomright.png
-usr/share/apps/konqueror/pics/arrow_topleft.png
-usr/share/apps/konqueror/pics/arrow_topright.png
-usr/share/apps/konqueror/pics/thumbnailfont_7x4.png
-usr/share/doc/HTML/en/kdebase-apidocs/libkonq/
-usr/share/services/kded/favicons.desktop
-usr/share/servicetypes/konqpopupmenuplugin.desktop
-usr/share/doc/libkonq-*/
-usr/share/doc/Cygwin/libkonq-3*.README

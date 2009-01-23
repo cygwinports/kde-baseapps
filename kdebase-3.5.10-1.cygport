@@ -1,0 +1,37 @@
+inherit kde3
+
+PATCH_URI="
+	3.5.9-exeext.patch
+	3.5.9-no-undefined.patch
+	3.5.9-confproc.patch
+	3.5.9-getloadavg.patch
+	3.5.9-if_pointopoint.patch
+	3.5.9-kdeeject.patch
+	3.5.9-kioslave-nfs.patch
+	3.5.9-ksocklen_t.patch
+	3.5.9-libpython.patch
+	3.5.9-nsplugins.patch
+	3.5.9-tcsetpgrp.patch
+	3.5.9-utmpx.patch
+"
+
+PKG_NAMES="${PN} ${PN}-data kde3-kioslaves-${PN} ${PN}-startkde
+	drkonqi kappfinder kate kcheckpass kcminit kcontrol kdcop kdebugdialog
+	kdeprint kdesktop kdesu kdialog kdm kfind khelpcenter khotkeys kicker
+	klipper kmenuedit knetattach konqueror konsole kpager kpersonalizer
+	kreadconfig kscreensaver ksmserver ksplash kstart ksysguard ksystraycmd
+	ktip kwin kxkb libkonq4 libkonq-devel konqueror-nsplugins"
+
+kdebase_CONTENTS="usr/share/doc/Cygwin/${P}.README usr/share/doc/${P}/"
+
+CYGCONF_ARGS="
+	--with-ldap
+	--with-libusb
+	--with-openexr
+	--without-composite
+	--without-hal
+	--without-krb4 --without-afs
+	--without-libraw1394
+	--without-samba
+	--without-xinerama
+"

@@ -5,5 +5,4 @@ usr/lib/kde3/kcm_nsplugins.*
 usr/lib/kde3/libnsplugin.la
 usr/share/applications/kde/khtml_plugins.desktop
 usr/share/apps/plugin/nspluginpart.rc
-usr/share/doc/nsplugins-*/
-usr/share/doc/Cygwin/nsplugins-3*.README
+usr/share/doc/Cygwin/konqueror-nsplugins-3*.README

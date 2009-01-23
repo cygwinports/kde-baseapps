@@ -140,4 +140,4 @@ usr/share/services/thumbnail.protocol
 usr/share/services/trash.protocol
 usr/share/services/zip.protocol
 usr/share/servicetypes/thumbcreator.desktop
-usr/share/doc/Cygwin/kdebase-kioslaves-3*.README
+usr/share/doc/Cygwin/kde3-kioslaves-kdebase-3*.README

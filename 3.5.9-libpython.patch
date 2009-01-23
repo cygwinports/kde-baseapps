@@ -1,0 +1,20 @@
+--- origsrc/kdebase-3.5.9/admin/acinclude.m4.in	2008-02-13 07:20:48.000000000 -0600
++++ src/kdebase-3.5.9/admin/acinclude.m4.in	2008-02-21 09:45:51.531250000 -0600
+@@ -4586,10 +4589,14 @@
+ if test ! -r $python_libdir/libpython$version.so; then
+   AC_FIND_FILE(libpython$version.a, $python_libdirs, python_libdir)
+   if test ! -r $python_libdir/libpython$version.a; then
+-    AC_FIND_FILE(python$version/config/libpython$version.a, $python_libdirs, python_libdir)
++    AC_FIND_FILE(python$version/config/libpython$version.dll.a, $python_libdirs, python_libdir)
+     python_libdir=$python_libdir/python$version/config
+-    if test ! -r $python_libdir/libpython$version.a; then
+-      python_libdir=no
++    if test ! -r $python_libdir/libpython$version.dll.a; then
++      AC_FIND_FILE(python$version/config/libpython$version.a, $python_libdirs, python_libdir)
++      python_libdir=$python_libdir/python$version/config
++      if test ! -r $python_libdir/libpython$version.a; then
++        python_libdir=no
++      fi
+     fi
+   fi
+ fi
