@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 libqt3
+requires: cygwin kdelibs4 libqt3 libX11_6 libXinerama1
 external-source: kdebase
 sdesc: "KDE desktop splash screen"
 ldesc: "KDE base desktop packages"

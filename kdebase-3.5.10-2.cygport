@@ -33,5 +33,4 @@ CYGCONF_ARGS="
 	--without-krb4 --without-afs
 	--without-libraw1394
 	--without-samba
-	--without-xinerama
 "
