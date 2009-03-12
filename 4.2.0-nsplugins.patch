@@ -1,0 +1,37 @@
+--- origsrc/kdebase-4.2.0/apps/nsplugins/CMakeLists.txt	2008-11-04 11:12:21.000000000 -0600
++++ src/kdebase-4.2.0/apps/nsplugins/CMakeLists.txt	2009-01-28 22:08:58.672375000 -0600
+@@ -31,11 +31,11 @@ if (X11_Xt_LIB)
+   QT4_ADD_DBUS_INTERFACE( nsplugins_PART_SRCS ${nsplugins_viewer_xml} nsplugins_viewer_interface )
+ 
+ 
+-  kde4_add_plugin(libnsplugin ${nsplugins_PART_SRCS})
++  kde4_add_plugin(nsplugin ${nsplugins_PART_SRCS})
+ 
+-  target_link_libraries(libnsplugin ${KDE4_KPARTS_LIBS} ${QT_QTGUI_LIBRARY})
++  target_link_libraries(nsplugin ${KDE4_KPARTS_LIBS} ${QT_QTGUI_LIBRARY})
+ 
+-  install(TARGETS libnsplugin  DESTINATION ${PLUGIN_INSTALL_DIR} )
++  install(TARGETS nsplugin  DESTINATION ${PLUGIN_INSTALL_DIR} )
+ 
+ 
+   ########### next target ###############
+@@ -43,7 +43,7 @@ if (X11_Xt_LIB)
+   set(kcminit_nsplugins_SRCS kcm_nsplugins.cpp plugin_paths.cpp)
+ 
+ 
+-  kde4_add_plugin(kcminit_nsplugins WITH_PREFIX  ${kcminit_nsplugins_SRCS})
++  kde4_add_plugin(kcminit_nsplugins  ${kcminit_nsplugins_SRCS})
+ 
+   target_link_libraries(kcminit_nsplugins ${KDE4_KDECORE_LIBS} )
+ 
+--- origsrc/kdebase-4.2.0/apps/nsplugins/pluginscan.cpp	2009-01-01 10:24:45.000000000 -0600
++++ src/kdebase-4.2.0/apps/nsplugins/pluginscan.cpp	2009-01-28 22:05:52.891125000 -0600
+@@ -466,7 +466,7 @@ void writeServicesFile( const QStringLis
+         ts << "Type=Service" << endl;
+         ts << "Icon=netscape" << endl;
+         ts << "Comment=" << i18n("Netscape plugin viewer") << endl;
+-        ts << "X-KDE-Library=libnsplugin" << endl;
++        ts << "X-KDE-Library=nsplugin" << endl;
+         ts << "InitialPreference=0" << endl;
+         ts << "ServiceTypes=KParts/ReadOnlyPart,Browser/View" << endl;
+         ts << "X-KDE-BrowserView-PluginsInfo=nsplugins/pluginsinfo" << endl;

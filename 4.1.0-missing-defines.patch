@@ -1,0 +1,25 @@
+--- origsrc/kdebase-4.0.99/apps/kinfocenter/nics/nic.cpp	2008-04-18 02:21:35.000000000 -0500
++++ src/kdebase-4.0.99/apps/kinfocenter/nics/nic.cpp	2008-07-23 01:46:52.687500000 -0500
+@@ -194,8 +194,10 @@
+ 
+ 			if ((flags & IFF_BROADCAST) == IFF_BROADCAST)
+ 				tmp->type=i18nc("@item:intext Mode of network card", "Broadcast");
++#ifdef IFF_POINTOPOINT
+ 			else if ((flags & IFF_POINTOPOINT) == IFF_POINTOPOINT)
+ 				tmp->type=i18nc("@item:intext Mode of network card", "Point to Point");
++#endif
+ #ifndef _AIX
+ 			else if ((flags & IFF_MULTICAST) == IFF_MULTICAST)
+ 				tmp->type=i18nc("@item:intext Mode of network card", "Multicast");
+--- origsrc/kdebase-4.0.99/apps/nsplugins/viewer/nsplugin.cpp	2008-07-03 00:05:15.000000000 -0500
++++ src/kdebase-4.0.99/apps/nsplugins/viewer/nsplugin.cpp	2008-07-23 17:06:02.421875000 -0500
+@@ -1120,6 +1120,9 @@
+ }
+ 
+ #include <dlfcn.h>
++#ifdef __CYGWIN__
++#  define RTLD_NEXT		dlopen("cygX11-6.dll", RTLD_GLOBAL|RTLD_LAZY)
++#endif
+ // Prevent plugins from polling the keyboard regardless of focus.
+ static int (*real_xquerykeymap)( Display*, char[32] ) = NULL;
+ 
