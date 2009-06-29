@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 libqt3 libXcursor1 libopenexr6 libopenldap2_3_0 libsasl2
+requires: kdelibs4 libqt3 libXcursor1 libopenexr6 libopenldap2_3_0 libsasl2
 external-source: kdebase
 sdesc: "KDE base I/O plugins"
 ldesc: "KDE base desktop packages"

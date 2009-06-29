@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 libqt3 kicker
+requires: kdelibs4 libqt3 kicker
 external-source: kdebase
 sdesc: "KDE clipboard manager"
 ldesc: "KDE base desktop packages"

@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 libqt3
+requires: kdelibs4 libqt3
 external-source: kdebase
 sdesc: "KDE DCOP browser"
 ldesc: "KDE base desktop packages"

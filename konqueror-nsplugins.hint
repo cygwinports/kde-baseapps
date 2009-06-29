@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 konqueror libqt3
+requires: kdelibs4 konqueror libqt3
 external-source: kdebase
 sdesc: "KDE Netscape browser plugin integrator"
 ldesc: "KDE base desktop packages"
