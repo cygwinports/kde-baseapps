@@ -5,15 +5,17 @@ PATCH_URI="
 	3.5.9-no-undefined.patch
 	3.5.9-confproc.patch
 	3.5.9-getloadavg.patch
-	3.5.9-if_pointopoint.patch
 	3.5.9-kdeeject.patch
 	3.5.9-kioslave-nfs.patch
-	3.5.9-ksocklen_t.patch
 	3.5.9-libpython.patch
 	3.5.9-nsplugins.patch
 	3.5.9-tcsetpgrp.patch
 	3.5.9-utmpx.patch
 "
+
+# AFAIK do NOT collide with KDE4:
+#   kde3-kioslaves-${PN} kcminit?? kdcop kdebudialog?? kdeprint kdesktop
+#   kicker kpager kpersonalizer ktip kxkb libkonq4
 
 PKG_NAMES="${PN} ${PN}-data kde3-kioslaves-${PN} ${PN}-startkde
 	drkonqi kappfinder kate kcheckpass kcminit kcontrol kdcop kdebugdialog
@@ -22,15 +24,15 @@ PKG_NAMES="${PN} ${PN}-data kde3-kioslaves-${PN} ${PN}-startkde
 	kreadconfig kscreensaver ksmserver ksplash kstart ksysguard ksystraycmd
 	ktip kwin kxkb libkonq4 libkonq-devel konqueror-nsplugins"
 
-kdebase_CONTENTS="usr/share/doc/Cygwin/${P}.README usr/share/doc/${P}/"
+kdebase_CONTENTS="usr/share/doc/Cygwin/${PN}.README usr/share/doc/${PN}/"
 
 CYGCONF_ARGS="
 	--with-ldap
-	--with-libusb
 	--with-openexr
 	--without-composite
 	--without-hal
 	--without-krb4 --without-afs
 	--without-libraw1394
+	--without-libusb
 	--without-samba
 "

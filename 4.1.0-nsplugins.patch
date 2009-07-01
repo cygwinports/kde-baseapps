@@ -1,0 +1,12 @@
+--- origsrc/kdebase-4.0.99/apps/nsplugins/viewer/nsplugin.cpp	2008-07-03 00:05:15.000000000 -0500
++++ src/kdebase-4.0.99/apps/nsplugins/viewer/nsplugin.cpp	2008-07-23 17:06:02.421875000 -0500
+@@ -1120,6 +1120,9 @@
+ }
+ 
+ #include <dlfcn.h>
++#ifdef __CYGWIN__
++#  define RTLD_NEXT		dlopen("cygX11-6.dll", RTLD_GLOBAL|RTLD_LAZY)
++#endif
+ // Prevent plugins from polling the keyboard regardless of focus.
+ static int (*real_xquerykeymap)( Display*, char[32] ) = NULL;
+ 

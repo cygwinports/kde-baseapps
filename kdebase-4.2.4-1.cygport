@@ -1,7 +1,6 @@
 inherit kde4
 
-PATCH_URI="4.1.0-missing-defines.patch
-           4.2.0-nsplugins.patch"
+PATCH_URI="4.1.0-nsplugins.patch"
 
 PKG_NAMES="${PN} dolphin kappfinder kdepasswd kdialog keditbookmarks
            kfind kinfocenter konqueror konsole kwrite
