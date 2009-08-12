@@ -1,0 +1,5 @@
+category: KDE
+requires: libgcc1 libkdecore5 libQtCore4 libQtDBus4 libQtGui4 libQtXml4 libstdc++6
+external-source: kdebase
+sdesc: "KDE bookmark organizer"
+ldesc: "KDE base desktop packages"

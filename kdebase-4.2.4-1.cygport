@@ -3,5 +3,7 @@ inherit kde4
 PATCH_URI="4.1.0-nsplugins.patch"
 
 PKG_NAMES="${PN} dolphin kappfinder kdepasswd kdialog keditbookmarks
-           kfind kinfocenter konqueror konsole kwrite
-           libkonq5 libkonq-devel nsplugins plasma-applet-folderview"
+           kfind kinfocenter konqueror konqueror-nsplugins konsole kwrite
+           libkonq5 libkonq5-devel plasma-applet-folderview"
+kdebase_CONTENTS="etc/postinstall/ usr/share/doc/Cygwin/ usr/share/doc/${PN}/"
+PKG_IGNORE="usr/lib/kde4/lib/lib*private.dll.a"

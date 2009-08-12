@@ -1,5 +1,5 @@
 category: KDE
-requires: kdelibs4 libarts1 libqt3
+requires: libgcc1 libkdecore4 libarts1 libqt3 libstdc++6
 external-source: kdebase
-sdesc: "KDE konqueror library (runtime)"
+sdesc: "KDE3 file manager library (runtime)"
 ldesc: "KDE base desktop packages"

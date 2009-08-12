@@ -1,5 +1,5 @@
 category: Shells KDE
-requires: kdelibs4 libqt3 libcdio
+requires: libgcc1 libkdecore5 libQtCore4 libQtDBus4 libQtGui4 libstdc++6 libX11_6
 external-source: kdebase
 sdesc: "KDE dialog"
 ldesc: "KDE base desktop packages"

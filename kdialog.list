@@ -1,4 +1,2 @@
-usr/bin/kdeeject
 usr/bin/kdialog.exe
-usr/share/doc/kdialog-*/
-usr/share/doc/Cygwin/kdialog-3*.README
+usr/share/dbus-1/interfaces/org.kde.kdialog.ProgressDialog.xml

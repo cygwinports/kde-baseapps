@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs-devel libarts-devel libkonq4 libqt3-devel
-external-source: kdebase
-sdesc: "KDE konqueror library (development)"
-ldesc: "KDE base desktop packages"

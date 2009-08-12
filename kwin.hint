@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs4 libqt3 libXdamage1 libXext6 libXfixes3 libXrender1
-external-source: kdebase
-sdesc: "KDE desktop window manager"
-ldesc: "KDE base desktop packages"

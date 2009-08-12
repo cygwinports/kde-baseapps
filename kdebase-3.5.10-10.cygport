@@ -11,25 +11,23 @@ PATCH_URI="
 	3.5.9-nsplugins.patch
 	3.5.9-tcsetpgrp.patch
 	3.5.9-utmpx.patch
+	3.5.10-parallel-make.patch
+	3.5.10-socklen_t.patch
 "
 
-# AFAIK do NOT collide with KDE4:
-#   kde3-kioslaves-${PN} kcminit?? kdcop kdebudialog?? kdeprint kdesktop
-#   kicker kpager kpersonalizer ktip kxkb libkonq4
+DO_NOT_COMPILE="applnk doc drkonqi kappfinder kate kcheckpass kcminit
+	kcontrol kdebugdialog kdeeject kdepasswd kdeprint kdesktop kdialog kdm
+	kdmlib kfind khelpcenter khotkeys kicker klipper kmenuedit knetattach
+	konqueror konsole kpager kreadconfig kscreensaver ksmserver ksplashml
+	kstart ksysguard ksystraycmd ktip kwin kxkb l10n nsplugins pics"
 
-PKG_NAMES="${PN} ${PN}-data kde3-kioslaves-${PN} ${PN}-startkde
-	drkonqi kappfinder kate kcheckpass kcminit kcontrol kdcop kdebugdialog
-	kdeprint kdesktop kdesu kdialog kdm kfind khelpcenter khotkeys kicker
-	klipper kmenuedit knetattach konqueror konsole kpager kpersonalizer
-	kreadconfig kscreensaver ksmserver ksplash kstart ksysguard ksystraycmd
-	ktip kwin kxkb libkonq4 libkonq-devel konqueror-nsplugins"
-
-kdebase_CONTENTS="usr/share/doc/Cygwin/${PN}.README usr/share/doc/${PN}/"
+PKG_NAMES="${PN} kde3-kio-base kdcop kpersonalizer libkonq4 libkonq4-devel"
+PKG_IGNORE="etc/postinstall/ usr/bin/kde3 usr/bin/startkde usr/share/doc/${PN}/"
 
 CYGCONF_ARGS="
+	--with-composite
 	--with-ldap
 	--with-openexr
-	--without-composite
 	--without-hal
 	--without-krb4 --without-afs
 	--without-libraw1394

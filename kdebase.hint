@@ -1,4 +1,4 @@
 category: KDE
-requires: drkonqi kappfinder kate kcheckpass kcminit kcontrol kdcop kdebase-data kde3-kioslaves-kdebase kdebase-startkde kdebugdialog kdeprint kdesktop kdesu kdialog kdm kfind khelpcenter khotkeys kicker klipper kmenuedit knetattach konqueror konsole kpager kpersonalizer kreadconfig kscreensaver ksmserver ksplash kstart ksysguard ksystraycmd ktip kwin kxkb konqueror-nsplugins
-sdesc: "KDE base desktop meta-package"
-ldesc: "KDE base desktop packages"
+requires: drkonqi kappfinder kdebase-runtime kdepasswd kdialog keditbookmarks kfind kinfocenter konqueror konqueror-nsplugins konsole kwrite plasma-applet-folderview.hint
+sdesc: "KDE base applications (meta-package)"
+ldesc: "KDE base applications"

@@ -1,5 +1,5 @@
 category: KDE
-requires: kdelibs4 libqt3
+requires: libgcc1 libkdecore5 libQtCore4 libQtDBus4 libQtGui4 libstdc++6 libX11_6 libXrender1
 external-source: kdebase
 sdesc: "KDE virtual terminal"
 ldesc: "KDE base desktop packages"

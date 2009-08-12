@@ -1,5 +1,0 @@
-category: KDE
-requires: crypt
-external-source: kdebase
-sdesc: "KDE password authentication program"
-ldesc: "KDE base desktop packages"

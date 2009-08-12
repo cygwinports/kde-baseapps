@@ -1,5 +1,5 @@
 category: KDE
-requires: kdelibs4 libqt3
+requires: libgcc1 libkdecore4 libqt3 libstdc++6
 external-source: kdebase
-sdesc: "KDE basic settings wizard"
+sdesc: "KDE3 appearance settings wizard"
 ldesc: "KDE base desktop packages"

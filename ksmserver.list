@@ -1,9 +1,0 @@
-usr/bin/cygkdeinit_ksmserver.dll
-usr/bin/ksmserver.exe
-usr/lib/kde3/ksmserver.*
-usr/lib/libkdeinit_ksmserver.la
-usr/share/apps/kconf_update/ksmserver.upd
-usr/share/apps/kconf_update/move_session_config.sh
-usr/share/apps/ksmserver/pics/shutdownkonq.png
-usr/share/doc/ksmserver-*/
-usr/share/doc/Cygwin/ksmserver-3*.README

@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs4 libqt3 libkonq4
-external-source: kdebase
-sdesc: "KDE desktop panel"
-ldesc: "KDE base desktop packages"

@@ -1,5 +1,5 @@
 category: KDE
 requires: libgcc1 libkdecore5 libQtCore4 libQtGui4 libstdc++6
 external-source: kdebase
-sdesc: "KDE application finder"
+sdesc: "KDE text editor"
 ldesc: "KDE base desktop packages"

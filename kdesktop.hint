@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs4 libqt3 libkonq4 libXss1 kdebase-data
-external-source: kdebase
-sdesc: "KDE desktop"
-ldesc: "KDE base desktop packages"

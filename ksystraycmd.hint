@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs4 libqt3
-external-source: kdebase
-sdesc: "KDE system tray application launcher"
-ldesc: "KDE base desktop packages"

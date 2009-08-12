@@ -1,0 +1,90 @@
+kdebase
+------------------------------------------
+KDE base applications, including:
+* dolphin: file manager
+* kdepasswd: passwd(1) frontend
+* kdialog: create dialog boxes from shell scripts
+* keditbookmarks: bookmark manager and importer
+* kfind: file finder
+* kinfocenter: information center
+* konqueror: web browser
+* konsole: virtual terminal emulator
+* kwrite: text editor
+
+Runtime requirements:
+  cygwin-1.7.0-56
+  libgcc1-4.3.2-2
+  libGL1-7.2-10
+  libglib2.0_0-2.20.3-1
+  libGLU1-7.2-10
+  libkdecore5-4.2.4-1
+  libnepomuk4-4.2.4-1
+  libphonon4-4.3.2-2
+  libplasma3-4.2.4-1
+  libQt3Support4-4.5.2-1
+  libQtCore4-4.5.2-1
+  libQtDBus4-4.5.2-1
+  libQtGui4-4.5.2-1
+  libQtXml4-4.5.2-1
+  libsoprano4-2.2.4-1
+  libstdc++6-4.3.2-2
+  libX11_6-1.2.1-1
+  libXext6-1.0.5-10
+  libXrender1-0.9.4-10
+  libXt6-1.0.6-1
+  zlib0-1.2.3-10
+
+Build requirements:
+(besides corresponding -devel packages)
+  automoc4-0.9.88-10
+  binutils-2.19.51-1
+  cmake-2.6.4-10
+  cygport-0.9.8-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
+  pkg-config-0.23b-10
+
+Canonical website:
+  http://www.kde.org/
+
+Canonical download:
+  ftp://ftp.kde.org/pub/kde/stable/4.2.4/
+
+-------------------------------------------
+
+Build instructions:
+  unpack kdebase-4.2.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./kdebase-4.2.4-X.cygport all
+
+This will create:
+  /usr/src/dolphin-4.2.4-X.tar.bz2
+  /usr/src/kappfinder-4.2.4-X.tar.bz2
+  /usr/src/kdebase-4.2.4-X-src.tar.bz2
+  /usr/src/kdebase-4.2.4-X.tar.bz2
+  /usr/src/kdepasswd-4.2.4-X.tar.bz2
+  /usr/src/kdialog-4.2.4-X.tar.bz2
+  /usr/src/keditbookmarks-4.2.4-X.tar.bz2
+  /usr/src/kfind-4.2.4-X.tar.bz2
+  /usr/src/kinfocenter-4.2.4-X.tar.bz2
+  /usr/src/konqueror-nsplugins-4.2.4-X.tar.bz2
+  /usr/src/konqueror-4.2.4-X.tar.bz2
+  /usr/src/konsole-4.2.4-X.tar.bz2
+  /usr/src/kwrite-4.2.4-X.tar.bz2
+  /usr/src/libkonq5-devel-4.2.4-X.tar.bz2
+  /usr/src/libkonq5-4.2.4-X.tar.bz2
+  /usr/src/plasma-applet-folderview-4.2.4-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 4.2.4-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

@@ -1,7 +1,6 @@
 usr/bin/kappfinder.exe
-usr/share/applications/kde/kappfinder.desktop
-usr/share/applnk/System/kappfinder.desktop
-usr/share/apps/kappfinder/
-usr/share/doc/HTML/en/kappfinder/
-usr/share/icons/hicolor/*/apps/kappfinder.png
-usr/share/doc/Cygwin/kappfinder-3*.README
+usr/share/applications/kde4/kappfinder.desktop
+usr/share/icons/hicolor/*/apps/kappfinder.*
+usr/share/icons/oxygen/*/apps/
+usr/share/kde4/apps/kappfinder/
+usr/share/man/man1/kappfinder.*
