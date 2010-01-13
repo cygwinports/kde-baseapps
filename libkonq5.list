@@ -6,6 +6,7 @@ usr/share/kde4/apps/kconf_update/favicons.upd
 usr/share/kde4/apps/kconf_update/move_favicons.sh
 usr/share/kde4/apps/konqueror/pics/arrow_*.png
 usr/share/kde4/services/kded/favicons.desktop
+usr/share/kde4/servicetypes/konqdndpopupmenuplugin.desktop
 usr/share/kde4/servicetypes/konqpopupmenuplugin.desktop
 usr/share/templates/.source/CAMERA-Device.desktop
 usr/share/templates/.source/CDROM-Device.desktop

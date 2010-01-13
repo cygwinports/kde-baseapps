@@ -1,5 +1,6 @@
 usr/include/kde4/knewmenu.h
 usr/include/kde4/konqmimedata.h
+usr/include/kde4/konq_dndpopupmenuplugin.h
 usr/include/kde4/konq_events.h
 usr/include/kde4/konq_fileitemcapabilities.h
 usr/include/kde4/konq_menuactions.h

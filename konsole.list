@@ -1,4 +1,5 @@
 usr/bin/cygkdeinit4_konsole.dll
+usr/bin/cygkonsoleprivate.dll
 usr/bin/konsole.exe
 usr/bin/konsoleprofile
 usr/lib/kde4/libkonsolepart.dll
