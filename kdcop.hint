@@ -1,5 +1,0 @@
-category: KDE
-requires: libgcc1 libkdecore4 libqt3 libstdc++6
-external-source: kdebase
-sdesc: "KDE DCOP service viewer"
-ldesc: "KDE base desktop packages"

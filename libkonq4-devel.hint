@@ -1,5 +1,0 @@
-category: KDE
-requires: libkdecore4-devel libarts-devel libkonq4 libqt3-devel libstdc++6-devel
-external-source: kdebase
-sdesc: "KDE3 file manager library (development)"
-ldesc: "KDE base desktop packages"

@@ -1,5 +1,0 @@
-category: KDE
-requires: libgcc1 libkdecore4 libqt3 libXcursor1 libopenexr6 libopenldap2_3_0 libsasl2 libstdc++6
-external-source: kdebase
-sdesc: "KDE3 KIO base plugins"
-ldesc: "KDE base desktop packages"

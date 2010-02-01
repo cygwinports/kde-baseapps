@@ -47,6 +47,7 @@ usr/share/kde4/apps/kcontrol/pics/overlapping.png
 usr/share/kde4/apps/khtml/
 usr/share/kde4/apps/konqsidebartng/
 usr/share/kde4/apps/konqueror/
+usr/share/kde4/apps/kwebkitpart/kpartplugins/
 usr/share/kde4/config/konqsidebartng.rc
 usr/share/kde4/config.kcfg/konqueror.kcfg
 usr/share/kde4/services/bookmarks.desktop
