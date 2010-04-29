@@ -1,9 +1,0 @@
---- origsrc/kdebase-4.3.5/apps/konqueror/kttsplugin/CMakeLists.txt	2010-01-21 14:47:53.000000000 -0600
-+++ src/kdebase-4.3.5/apps/konqueror/kttsplugin/CMakeLists.txt	2010-02-01 15:42:30.671644200 -0600
-@@ -49,5 +49,5 @@ install(TARGETS khtmlkttsdplugin  DESTIN
- 
- install( FILES khtmlkttsd.rc khtmlkttsd.desktop  DESTINATION  ${DATA_INSTALL_DIR}/khtml/kpartplugins )
- if( KDEWEBKIT_FOUND AND WEBKITPART_FOUND)
--   install( FILES khtmlkttsd.rc khtmlkttsd.desktop  DESTINATION  ${DATA_INSTALL_DIR}/webkitpart/kpartplugins )
-+   install( FILES khtmlkttsd.rc khtmlkttsd.desktop  DESTINATION  ${DATA_INSTALL_DIR}/kwebkitpart/kpartplugins )
- endif( KDEWEBKIT_FOUND AND WEBKITPART_FOUND)

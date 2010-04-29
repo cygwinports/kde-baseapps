@@ -2,7 +2,6 @@ inherit kde4
 
 PATCH_URI="
 	4.1.0-nsplugins.patch
-	4.3.5-kwebkitpart.patch
 "
 
 PKG_NAMES="${PN} dolphin kappfinder kdepasswd kdialog keditbookmarks

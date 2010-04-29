@@ -14,6 +14,7 @@ usr/lib/kde4/kcm_kurifilt.dll
 usr/lib/kde4/kcm_performance.dll
 usr/lib/kde4/kded_konqy_preloader.dll
 usr/lib/kde4/khtmlkttsdplugin.dll
+usr/lib/kde4/konqsidebar_history.dll
 usr/lib/kde4/konqsidebar_tree.dll
 usr/lib/kde4/konqsidebar_web.dll
 usr/lib/kde4/konq_aboutpage.dll
@@ -21,7 +22,6 @@ usr/lib/kde4/konq_shellcmdplugin.dll
 usr/lib/kde4/konq_sidebar.dll
 usr/lib/kde4/konq_sidebartree_bookmarks.dll
 usr/lib/kde4/konq_sidebartree_dirtree.dll
-usr/lib/kde4/konq_sidebartree_history.dll
 usr/lib/kde4/lib/libkonqsidebarplugin.dll.a
 usr/share/applications/kde4/Home.desktop
 usr/share/applications/kde4/kfmclient.desktop
@@ -40,15 +40,13 @@ usr/share/kde4/apps/dolphinpart/kpartplugins/
 usr/share/kde4/apps/kcmcss/template.css
 usr/share/kde4/apps/kconf_update/kfmclient_3_2.upd
 usr/share/kde4/apps/kconf_update/kfmclient_3_2_update.sh
-usr/share/kde4/apps/kconf_update/konqsidebartng.upd
-usr/share/kde4/apps/kconf_update/move_konqsidebartng_entries.sh
 usr/share/kde4/apps/kcontrol/pics/onlyone.png
 usr/share/kde4/apps/kcontrol/pics/overlapping.png
 usr/share/kde4/apps/khtml/
 usr/share/kde4/apps/konqsidebartng/
 usr/share/kde4/apps/konqueror/
 usr/share/kde4/apps/kwebkitpart/kpartplugins/
-usr/share/kde4/config/konqsidebartng.rc
+usr/share/kde4/config/konqsidebartngrc
 usr/share/kde4/config.kcfg/konqueror.kcfg
 usr/share/kde4/services/bookmarks.desktop
 usr/share/kde4/services/cache.desktop
@@ -68,7 +66,6 @@ usr/share/kde4/services/khtml_java_js.desktop
 usr/share/kde4/services/konqueror.desktop
 usr/share/kde4/services/konq_aboutpage.desktop
 usr/share/kde4/services/konq_sidebartng.desktop
-usr/share/kde4/services/lanbrowser.desktop
 usr/share/kde4/services/netpref.desktop
 usr/share/kde4/services/proxy.desktop
 usr/share/kde4/services/smb.desktop

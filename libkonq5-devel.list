@@ -3,11 +3,13 @@ usr/include/kde4/konqmimedata.h
 usr/include/kde4/konq_dndpopupmenuplugin.h
 usr/include/kde4/konq_events.h
 usr/include/kde4/konq_fileitemcapabilities.h
+usr/include/kde4/konq_history*.h
 usr/include/kde4/konq_menuactions.h
 usr/include/kde4/konq_operations.h
 usr/include/kde4/konq_popupmenu.h
 usr/include/kde4/konq_popupmenuinformation.h
 usr/include/kde4/konq_popupmenuplugin.h
+usr/include/kde4/kversioncontrolplugin.h
 usr/include/kde4/libkonq_export.h
 usr/lib/kde4/lib/libkonq.dll.a
 usr/share/dbus-1/interfaces/org.kde.FavIcon.xml
