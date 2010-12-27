@@ -1,8 +1,5 @@
 usr/bin/kfind.exe
-usr/lib/kde4/libkfindpart.dll
 usr/share/applications/kde4/kfind.desktop
 usr/share/doc/HTML/en/kfind/
 usr/share/icons/hicolor/*/apps/kfind.*
-usr/share/kde4/services/kfindpart.desktop
-usr/share/kde4/servicetypes/findpart.desktop
 usr/share/man/man1/kfind.*

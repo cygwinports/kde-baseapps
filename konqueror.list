@@ -15,6 +15,7 @@ usr/lib/kde4/kcm_performance.dll
 usr/lib/kde4/kded_konqy_preloader.dll
 usr/lib/kde4/khtmlkttsdplugin.dll
 usr/lib/kde4/konqsidebar_history.dll
+usr/lib/kde4/konqsidebar_places.dll
 usr/lib/kde4/konqsidebar_tree.dll
 usr/lib/kde4/konqsidebar_web.dll
 usr/lib/kde4/konq_aboutpage.dll
@@ -22,7 +23,7 @@ usr/lib/kde4/konq_shellcmdplugin.dll
 usr/lib/kde4/konq_sidebar.dll
 usr/lib/kde4/konq_sidebartree_bookmarks.dll
 usr/lib/kde4/konq_sidebartree_dirtree.dll
-usr/lib/kde4/lib/libkonqsidebarplugin.dll.a
+usr/lib/libkonqsidebarplugin.dll.a
 usr/share/applications/kde4/Home.desktop
 usr/share/applications/kde4/kfmclient.desktop
 usr/share/applications/kde4/kfmclient_dir.desktop
@@ -51,7 +52,6 @@ usr/share/kde4/config.kcfg/konqueror.kcfg
 usr/share/kde4/services/bookmarks.desktop
 usr/share/kde4/services/cache.desktop
 usr/share/kde4/services/cookies.desktop
-usr/share/kde4/services/desktoppath.desktop
 usr/share/kde4/services/ebrowsing.desktop
 usr/share/kde4/services/filebehavior.desktop
 usr/share/kde4/services/kcmhistory.desktop

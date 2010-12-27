@@ -1,6 +1,8 @@
+usr/bin/cygkbookmarkmodel_private-4.dll
 usr/bin/cygkdeinit4_keditbookmarks.dll
 usr/bin/kbookmarkmerger.exe
 usr/bin/keditbookmarks.exe
+usr/share/applications/kde4/keditbookmarks.desktop
 usr/share/kde4/apps/keditbookmarks/
 usr/share/kde4/config.kcfg/keditbookmarks.kcfg
 usr/share/man/man1/kbookmarkmerger.*
