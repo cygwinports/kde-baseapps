@@ -5,6 +5,7 @@ usr/bin/konsoleprofile
 usr/lib/kde4/libkonsolepart.dll
 usr/share/applications/kde4/konsole.desktop
 usr/share/doc/HTML/en/konsole/
+usr/share/doc/konsole/
 usr/share/kde4/apps/konsole/
 usr/share/kde4/services/konsolepart.desktop
 usr/share/kde4/services/ServiceMenus/konsolehere.desktop

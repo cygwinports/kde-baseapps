@@ -36,6 +36,7 @@ usr/share/dbus-1/interfaces/org.kde.Konqueror.Main.xml
 usr/share/dbus-1/interfaces/org.kde.Konqueror.MainWindow.xml
 usr/share/dbus-1/interfaces/org.kde.konqueror.Preloader.xml
 usr/share/doc/HTML/en/konqueror/
+usr/share/doc/konqueror/
 usr/share/icons/hicolor/*/apps/konqueror.*
 usr/share/kde4/apps/dolphinpart/kpartplugins/
 usr/share/kde4/apps/kcmcss/template.css

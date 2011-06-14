@@ -1,5 +1,6 @@
 usr/bin/kfind.exe
 usr/share/applications/kde4/kfind.desktop
 usr/share/doc/HTML/en/kfind/
+usr/share/doc/kfind/
 usr/share/icons/hicolor/*/apps/kfind.*
 usr/share/man/man1/kfind.*
