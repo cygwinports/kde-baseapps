@@ -1,3 +1,4 @@
+etc/postinstall/kde-baseapps.sh
 usr/bin/cygkbookmarkmodel_private-4.dll
 usr/bin/cygkdeinit4_keditbookmarks.dll
 usr/bin/kbookmarkmerger.exe

@@ -1,0 +1,4 @@
+category: KDE
+requires: dolphin kdepasswd kdialog keditbookmarks kfind konqueror
+sdesc: "KDE base applications (meta-package)"
+ldesc: "KDE base applications"

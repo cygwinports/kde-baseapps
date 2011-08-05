@@ -1,6 +1,6 @@
 category: KDE
 requires: libgcc1 libkdecore5 libkonq5 libQtCore4 libQtDBus4 libQtGui4 libsoprano4 libstdc++6 libX11_6
-external-source: kdebase
+external-source: kde-baseapps
 sdesc: "KDE file manager"
 ldesc: "Dolphin is a file manager for KDE focusing on usability. Dolphin 
 is not intended to be a competitor to Konqueror: Konqueror acts as 

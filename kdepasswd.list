@@ -1,3 +1,4 @@
+etc/postinstall/kde-baseapps.sh
 usr/bin/kdepasswd.exe
 usr/lib/kde4/kcm_useraccount.dll
 usr/share/applications/kde4/kdepasswd.desktop

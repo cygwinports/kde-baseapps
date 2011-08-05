@@ -1,5 +1,5 @@
 category: KDE
-requires: libgcc1 libkdecore5 libkonq5 libQt3Support4 libQtCore4 libQtDBus4 libQtGui4 libQtWebKit4 libQtXml4 libstdc++6 libX11_6 zlib0
-external-source: kdebase
+requires: libgcc1 libglib2.0_0 libkdecore5 libkonq5 libQt3Support4 libQtCore4 libQtDBus4 libQtGui4 libQtScript4 libQtWebKit4 libQtXml4 libstdc++6 libtidy0_99_0 libX11_6 libXt6 zlib0
+external-source: kde-baseapps
 sdesc: "KDE web browser"
 ldesc: "KDE base desktop packages"

@@ -1,5 +1,5 @@
 category: KDE
 requires: libgcc1 libkdecore5 libphonon4 libQtCore4 libQtDBus4 libQtGui4 libQtXml4 libstdc++6
-external-source: kdebase
+external-source: kde-baseapps
 sdesc: "KDE file manager library (runtime)"
 ldesc: "KDE base desktop packages"

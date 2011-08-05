@@ -1,7 +1,0 @@
-usr/bin/nspluginscan.exe
-usr/bin/nspluginviewer.exe
-usr/lib/kde4/libkcminit_nsplugins.dll
-usr/lib/kde4/libnsplugin.dll
-usr/share/dbus-1/interfaces/org.kde.nsplugins.*
-usr/share/kde4/apps/plugin/nspluginpart.rc
-usr/share/kde4/services/khtml_plugins.desktop

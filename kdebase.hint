@@ -1,4 +1,0 @@
-category: KDE
-requires: drkonqi kappfinder kdebase-runtime kdepasswd kdialog keditbookmarks kfind kinfocenter konqueror konqueror-nsplugins konsole kwrite plasma-applet-folderview.hint
-sdesc: "KDE base applications (meta-package)"
-ldesc: "KDE base applications"

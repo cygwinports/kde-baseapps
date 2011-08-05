@@ -1,3 +1,4 @@
+etc/postinstall/kde-baseapps.sh
 usr/bin/cygdolphinprivate-4.dll
 usr/bin/cygkdeinit4_dolphin.dll
 usr/bin/dolphin.exe

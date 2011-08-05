@@ -1,5 +1,5 @@
 category: KDE
 requires: libkonq5 libkdecore5-devel libQtCore4-devel libQtGui4-devel
-external-source: kdebase
+external-source: kde-baseapps
 sdesc: "KDE file manager library (development)"
 ldesc: "KDE base desktop packages"

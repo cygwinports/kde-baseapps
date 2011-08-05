@@ -1,5 +1,0 @@
-category: KDE
-requires: libgcc1 libglib2.0_0 libkdecore5 libQtCore4 libQtDBus4 libQtGui4 libstdc++6 libX11_6 libXt6
-external-source: kdebase
-sdesc: "KDE Netscape browser plugin handler"
-ldesc: "KDE base desktop packages"
