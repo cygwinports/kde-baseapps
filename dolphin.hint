@@ -1,5 +1,5 @@
 category: KDE
-requires: libgcc1 libkdecore5 libkonq5 libQtCore4 libQtDBus4 libQtGui4 libsoprano4 libstdc++6 libX11_6
+requires: libgcc1 libkdecore5 libkonq5 libQtCore4 libQtDBus4 libQtGui4 libsoprano4 libstdc++6 libX11_6 libXrender1
 external-source: kde-baseapps
 sdesc: "KDE file manager"
 ldesc: "Dolphin is a file manager for KDE focusing on usability. Dolphin 
