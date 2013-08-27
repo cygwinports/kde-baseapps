@@ -1,9 +1,0 @@
-inherit kde4
-
-PATCH_URI="
-	4.1.0-nsplugins.patch
-"
-
-PKG_NAMES="dolphin kdepasswd kdialog keditbookmarks kfind konqueror
-           libkonq5 libkonq-devel plasma-applet-folderview"
-PKG_IGNORE="usr/lib/lib*private.dll.a"
