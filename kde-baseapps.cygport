@@ -81,6 +81,7 @@ kfind_CONTENTS="
 	usr/share/man/man1/kfind.*
 "
 konqueror_SUMMARY="KDE web browser"
+konqueror_REQUIRES="kwebkitpart"
 konqueror_CONTENTS="
 	--exclude=arrow_*.png
 	etc/postinstall/kde-baseapps.sh
