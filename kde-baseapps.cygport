@@ -15,6 +15,7 @@ PKG_NAMES="${NAME} dolphin kdepasswd kdialog keditbookmarks kfind konqueror
 kde_baseapps_REQUIRES="dolphin kdepasswd kdialog keditbookmarks kfind konqueror"
 kde_baseapps_CONTENTS="usr/share/doc/${NAME}/"
 dolphin_OBSOLETES="plasma-applet-folderview"
+dolphin_REQUIRES="kde-runtime kdialog"
 dolphin_SUMMARY="KDE file manager"
 dolphin_CONTENTS="
 	etc/postinstall/kde-baseapps.sh
@@ -40,6 +41,7 @@ dolphin_CONTENTS="
 	usr/share/kde4/servicetypes/fileviewversioncontrolplugin.desktop
 "
 kdepasswd_SUMMARY="KDE passwd frontend"
+kdepasswd_REQUIRES="kde-runtime"
 kdepasswd_CONTENTS="
 	etc/postinstall/kde-baseapps.sh
 	usr/bin/kdepasswd.exe
@@ -52,12 +54,14 @@ kdepasswd_CONTENTS="
 	usr/share/kde4/services/kcm_useraccount.desktop
 "
 kdialog_SUMMARY="KDE dialog"
+kdialog_REQUIRES="kde-runtime"
 kdialog_CONTENTS="
 	usr/bin/kdialog.exe
 	usr/share/dbus-1/interfaces/org.kde.kdialog.ProgressDialog.xml
 	usr/share/doc/kdialog/
 "
 keditbookmarks_SUMMARY="KDE bookmark organizer"
+keditbookmarks_REQUIRES="kde-runtime"
 keditbookmarks_CONTENTS="
 	etc/postinstall/kde-baseapps.sh
 	usr/bin/cygkbookmarkmodel_private-4.dll
@@ -71,6 +75,7 @@ keditbookmarks_CONTENTS="
 	usr/share/man/man1/kbookmarkmerger.*
 "
 kfind_SUMMARY="KDE file finder"
+kfind_REQUIRES="kde-runtime"
 kfind_CONTENTS="
 	etc/postinstall/kde-baseapps.sh
 	usr/bin/kfind.exe
@@ -81,7 +86,7 @@ kfind_CONTENTS="
 	usr/share/man/man1/kfind.*
 "
 konqueror_SUMMARY="KDE web browser"
-konqueror_REQUIRES="kwebkitpart"
+konqueror_REQUIRES="dolphin kde-runtime kdialog kwebkitpart"
 konqueror_CONTENTS="
 	--exclude=arrow_*.png
 	etc/postinstall/kde-baseapps.sh
