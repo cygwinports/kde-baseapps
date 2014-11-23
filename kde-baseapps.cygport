@@ -27,6 +27,7 @@ dolphin_CONTENTS="
 	usr/lib/kde4/kio_filenamesearch.dll
 	usr/lib/kde4/kcm_dolphin*
 	usr/lib/kde4/plasma_applet_folderview.dll
+	usr/share/appdata/dolphin.appdata.xml
 	usr/share/applications/kde4/dolphin.desktop
 	usr/share/doc/HTML/en/dolphin/
 	usr/share/doc/dolphin/
