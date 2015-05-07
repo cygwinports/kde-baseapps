@@ -1,12 +1,16 @@
 inherit kde4
 
 NAME="kde-baseapps"
-VERSION=4.14.3
+VERSION=14.12.3
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE base applications"
 
 PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/kdebase-4.2.1-home-icon.patch
+	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/kdebase-4.4.0-konqueror-kde%23228593.patch
+	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/kde-baseapps-4.14.3-konq_mimetype.patch
+	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/0004-Use-user-places.xbel-instead-of-bookmarks.xml-in-pla.patch
 	4.1.0-nsplugins.patch
 "
 
@@ -80,6 +84,7 @@ kfind_REQUIRES="kde-runtime"
 kfind_CONTENTS="
 	etc/postinstall/kde-baseapps.sh
 	usr/bin/kfind.exe
+	usr/share/appdata/kfind.appdata.xml
 	usr/share/applications/kde4/kfind.desktop
 	usr/share/doc/HTML/en/kfind/
 	usr/share/doc/kfind/
@@ -135,6 +140,7 @@ konqueror_CONTENTS="
 	usr/lib/kde4/validatorsplugin.dll
 	usr/lib/kde4/webarchiverplugin.dll
 	usr/lib/kde4/webarchivethumbnail.dll
+	usr/share/appdata/konqueror.appdata.xml
 	usr/share/applications/kde4/Home.desktop
 	usr/share/applications/kde4/kfmclient*.desktop
 	usr/share/applications/kde4/konqbrowser.desktop
