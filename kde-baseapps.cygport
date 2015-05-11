@@ -19,7 +19,7 @@ PKG_NAMES="${NAME} dolphin kdepasswd kdialog keditbookmarks kfind konqueror
 kde_baseapps_REQUIRES="dolphin kdepasswd kdialog keditbookmarks kfind konqueror"
 kde_baseapps_CONTENTS="usr/share/doc/${NAME}/"
 dolphin_OBSOLETES="plasma-applet-folderview"
-dolphin_REQUIRES="kde-runtime kdialog"
+dolphin_REQUIRES="kde-runtime kdialog konsole"
 dolphin_SUMMARY="KDE file manager"
 dolphin_CONTENTS="
 	etc/postinstall/kde-baseapps.sh
