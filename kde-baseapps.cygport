@@ -92,7 +92,7 @@ kfind_CONTENTS="
 	usr/share/man/man1/kfind.*
 "
 konqueror_SUMMARY="KDE web browser"
-konqueror_REQUIRES="dolphin kde-runtime kdialog kwebkitpart"
+konqueror_REQUIRES="dolphin kate4-part kde-runtime kdialog kwebkitpart"
 konqueror_CONTENTS="
 	--exclude=arrow_*.png
 	etc/postinstall/kde-baseapps.sh
