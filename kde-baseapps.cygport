@@ -1,7 +1,7 @@
 inherit kde4
 
 NAME="kde-baseapps"
-VERSION=14.12.3
+VERSION=15.04.3
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE base applications"
@@ -10,7 +10,6 @@ PATCH_URI="
 	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/kdebase-4.2.1-home-icon.patch
 	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/kdebase-4.4.0-konqueror-kde%23228593.patch
 	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/kde-baseapps-4.14.3-konq_mimetype.patch
-	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/0004-Use-user-places.xbel-instead-of-bookmarks.xml-in-pla.patch
 	4.1.0-nsplugins.patch
 "
 
