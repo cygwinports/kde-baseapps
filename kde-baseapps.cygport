@@ -1,7 +1,7 @@
 inherit kde4
 
 NAME="kde-baseapps"
-VERSION=15.04.3
+VERSION=16.08.3
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE base applications"
@@ -13,35 +13,27 @@ PATCH_URI="
 	4.1.0-nsplugins.patch
 "
 
-PKG_NAMES="${NAME} dolphin kdepasswd kdialog keditbookmarks kfind konqueror
+PKG_NAMES="${NAME} dolphin4 kdepasswd kdialog keditbookmarks kfind konqueror
            konqueror-devel libkonq5 libkonq-devel"
 kde_baseapps_REQUIRES="dolphin kdepasswd kdialog keditbookmarks kfind konqueror"
 kde_baseapps_CONTENTS="usr/share/doc/${NAME}/"
-dolphin_OBSOLETES="plasma-applet-folderview"
-dolphin_REQUIRES="kde-runtime kdialog konsole4-part"
-dolphin_SUMMARY="KDE file manager"
-dolphin_CONTENTS="
+dolphin4_OBSOLETES="plasma-applet-folderview"
+dolphin4_REQUIRES="kde-runtime kdialog konsole4-part"
+dolphin4_SUMMARY="KDE file manager"
+dolphin4_CONTENTS="
 	etc/postinstall/kde-baseapps.sh
-	usr/bin/cygdolphinprivate-4.dll
-	usr/bin/cygkdeinit4_dolphin.dll
-	usr/bin/dolphin.exe
-	usr/bin/servicemenu*installation
+	usr/bin/cygdolphinprivate4-4.dll
+	usr/bin/cygkdeinit4_dolphin4.dll
+	usr/bin/dolphin4.exe
 	usr/lib/kde4/dolphinpart.dll
 	usr/lib/kde4/kio_filenamesearch.dll
 	usr/lib/kde4/kcm_dolphin*
-	usr/lib/kde4/plasma_applet_folderview.dll
-	usr/share/appdata/dolphin.appdata.xml
-	usr/share/applications/kde4/dolphin.desktop
-	usr/share/doc/HTML/en/dolphin/
-	usr/share/doc/dolphin/
 	usr/share/kde4/apps/dolphin/
 	usr/share/kde4/apps/dolphinpart/dolphinpart.rc
 	usr/share/kde4/config/servicemenu.knsrc
-	usr/share/kde4/config.kcfg/dolphin_*.kcfg
 	usr/share/kde4/services/dolphinpart.desktop
 	usr/share/kde4/services/filenamesearch.protocol
 	usr/share/kde4/services/kcmdolphin*
-	usr/share/kde4/services/plasma-applet-folderview.desktop
 	usr/share/kde4/servicetypes/fileviewversioncontrolplugin.desktop
 "
 kdepasswd_SUMMARY="KDE passwd frontend"
@@ -91,7 +83,7 @@ kfind_CONTENTS="
 	usr/share/man/man1/kfind.*
 "
 konqueror_SUMMARY="KDE web browser"
-konqueror_REQUIRES="dolphin kate4-part kde-runtime kdialog kwebkitpart"
+konqueror_REQUIRES="dolphin4 kate4-part kde-runtime kdialog kwebkitpart"
 konqueror_CONTENTS="
 	--exclude=arrow_*.png
 	etc/postinstall/kde-baseapps.sh
