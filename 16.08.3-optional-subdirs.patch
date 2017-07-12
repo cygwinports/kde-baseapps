@@ -1,0 +1,45 @@
+--- origsrc/kde-baseapps-16.08.3/CMakeLists.txt	2016-11-02 00:49:40.000000000 -0500
++++ src/kde-baseapps-16.08.3/CMakeLists.txt	2017-07-11 22:10:53.160631200 -0500
+@@ -38,22 +38,22 @@ if ( KActivities_FOUND )
+   include_directories (${KACTIVITIES_INCLUDE_DIR})
+ endif ( KActivities_FOUND )
+ 
+-add_subdirectory( lib )
+-add_subdirectory( dolphin )
+-add_subdirectory( kdialog )
+-add_subdirectory( keditbookmarks )
+-add_subdirectory( konqueror )
+-add_subdirectory( kfind )
++macro_optional_add_subdirectory( lib )
++macro_optional_add_subdirectory( dolphin )
++macro_optional_add_subdirectory( kdialog )
++macro_optional_add_subdirectory( keditbookmarks )
++macro_optional_add_subdirectory( konqueror )
++macro_optional_add_subdirectory( kfind )
+ macro_optional_add_subdirectory( plasma )
+-add_subdirectory( konq-plugins )
++macro_optional_add_subdirectory( konq-plugins )
+ 
+ if ( Q_WS_MAC )
+-  add_subdirectory( kdepasswd )
++  macro_optional_add_subdirectory( kdepasswd )
+ endif ( Q_WS_MAC )
+ 
+ if ( Q_WS_X11 )
+-  add_subdirectory( nsplugins )
+-  add_subdirectory( kdepasswd )
++  macro_optional_add_subdirectory( nsplugins )
++  macro_optional_add_subdirectory( kdepasswd )
+ endif ( Q_WS_X11 )
+ macro_optional_add_subdirectory( doc )
+ 
+--- origsrc/kde-baseapps-16.08.3/doc/CMakeLists.txt	2016-11-02 00:49:40.000000000 -0500
++++ src/kde-baseapps-16.08.3/doc/CMakeLists.txt	2017-07-11 23:29:50.487118500 -0500
+@@ -1,3 +1,7 @@
++if (BUILD_kfind)
+ add_subdirectory(kfind)
++endif (BUILD_kfind)
+ add_subdirectory(konqueror)
++if (BUILD_kdepasswd)
+ add_subdirectory(kdepasswd)
++endif (BUILD_kdepasswd)

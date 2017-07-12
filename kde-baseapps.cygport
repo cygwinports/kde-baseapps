@@ -2,7 +2,7 @@ inherit kde4
 
 NAME="kde-baseapps"
 VERSION=16.08.3
-RELEASE=1
+RELEASE=2
 CATEGORY="KDE"
 SUMMARY="KDE base applications"
 
@@ -10,12 +10,13 @@ PATCH_URI="
 	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/kdebase-4.2.1-home-icon.patch
 	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/kdebase-4.4.0-konqueror-kde%23228593.patch
 	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/kde-baseapps-4.14.3-konq_mimetype.patch
-	4.1.0-nsplugins.patch
+	16.08.3-optional-subdirs.patch
 "
 
-PKG_NAMES="${NAME} dolphin4 kdepasswd kdialog keditbookmarks kfind konqueror
-           konqueror-devel libkonq5 libkonq-devel"
-kde_baseapps_REQUIRES="dolphin kdepasswd kdialog keditbookmarks kfind konqueror"
+DO_NOT_COMPILE="kdepasswd kdialog keditbookmarks kfind nsplugins plasma"
+
+PKG_NAMES="${NAME} dolphin4 konqueror konqueror-devel libkonq5 libkonq-devel"
+kde_baseapps_REQUIRES="dolphin kdialog keditbookmarks kfind konqueror"
 kde_baseapps_CONTENTS="usr/share/doc/${NAME}/"
 dolphin4_OBSOLETES="plasma-applet-folderview"
 dolphin4_REQUIRES="kde-runtime kdialog konsole4-part"
@@ -36,52 +37,6 @@ dolphin4_CONTENTS="
 	usr/share/kde4/services/kcmdolphin*
 	usr/share/kde4/servicetypes/fileviewversioncontrolplugin.desktop
 "
-kdepasswd_SUMMARY="KDE passwd frontend"
-kdepasswd_REQUIRES="kde-runtime"
-kdepasswd_CONTENTS="
-	etc/postinstall/kde-baseapps.sh
-	usr/bin/kdepasswd.exe
-	usr/lib/kde4/kcm_useraccount.dll
-	usr/share/applications/kde4/kdepasswd.desktop
-	usr/share/doc/HTML/en/kdepasswd/
-	usr/share/doc/kdepasswd/
-	usr/share/kde4/apps/kdm/pics/
-	usr/share/kde4/config.kcfg/kcm_useraccount*.kcfg
-	usr/share/kde4/services/kcm_useraccount.desktop
-"
-kdialog_SUMMARY="KDE dialog"
-kdialog_REQUIRES="kde-runtime"
-kdialog_CONTENTS="
-	usr/bin/kdialog.exe
-	usr/share/dbus-1/interfaces/org.kde.kdialog.ProgressDialog.xml
-	usr/share/doc/kdialog/
-"
-keditbookmarks_SUMMARY="KDE bookmark organizer"
-keditbookmarks_REQUIRES="kde-runtime"
-keditbookmarks_CONTENTS="
-	etc/postinstall/kde-baseapps.sh
-	usr/bin/cygkbookmarkmodel_private-4.dll
-	usr/bin/cygkdeinit4_keditbookmarks.dll
-	usr/bin/kbookmarkmerger.exe
-	usr/bin/keditbookmarks.exe
-	usr/share/applications/kde4/keditbookmarks.desktop
-	usr/share/doc/keditbookmarks/
-	usr/share/kde4/apps/keditbookmarks/
-	usr/share/kde4/config.kcfg/keditbookmarks.kcfg
-	usr/share/man/man1/kbookmarkmerger.*
-"
-kfind_SUMMARY="KDE file finder"
-kfind_REQUIRES="kde-runtime"
-kfind_CONTENTS="
-	etc/postinstall/kde-baseapps.sh
-	usr/bin/kfind.exe
-	usr/share/appdata/kfind.appdata.xml
-	usr/share/applications/kde4/kfind.desktop
-	usr/share/doc/HTML/en/kfind/
-	usr/share/doc/kfind/
-	usr/share/icons/hicolor/*/apps/kfind.*
-	usr/share/man/man1/kfind.*
-"
 konqueror_SUMMARY="KDE web browser"
 konqueror_REQUIRES="dolphin4 kate4-part kde-runtime kdialog kwebkitpart"
 konqueror_CONTENTS="
@@ -94,8 +49,6 @@ konqueror_CONTENTS="
 	usr/bin/fsview.exe
 	usr/bin/kfmclient.exe
 	usr/bin/konqueror.exe
-	usr/bin/nspluginscan.exe
-	usr/bin/nspluginviewer.exe
 	usr/lib/kde4/adblock.dll
 	usr/lib/kde4/akregatorkonqfeedicon.dll
 	usr/lib/kde4/autorefresh.dll
@@ -122,8 +75,6 @@ konqueror_CONTENTS="
 	usr/lib/kde4/konq_sidebar.dll
 	usr/lib/kde4/konq_sidebartree_bookmarks.dll
 	usr/lib/kde4/konq_sidebartree_dirtree.dll
-	usr/lib/kde4/libkcminit_nsplugins.dll
-	usr/lib/kde4/libnsplugin.dll
 	usr/lib/kde4/minitoolsplugin.dll
 	usr/lib/kde4/rellinksplugin.dll
 	usr/lib/kde4/searchbarplugin.dll
@@ -138,7 +89,6 @@ konqueror_CONTENTS="
 	usr/share/applications/kde4/konquerorsu.desktop
 	usr/share/autostart/konqy_preload.desktop
 	usr/share/dbus-1/interfaces/org.kde.Konqueror.*
-	usr/share/dbus-1/interfaces/org.kde.nsplugins.*
 	usr/share/doc/HTML/en/konqueror/
 	usr/share/doc/konqueror/
 	usr/share/icons/hicolor/*/apps/fsview.*
@@ -161,7 +111,6 @@ konqueror_CONTENTS="
 	usr/share/kde4/apps/konqsidebartng/
 	usr/share/kde4/apps/konqueror/
 	usr/share/kde4/apps/kwebkitpart/kpartplugins/
-	usr/share/kde4/apps/nsplugin/
 	usr/share/kde4/config/konqsidebartngrc
 	usr/share/kde4/config/translaterc
 	usr/share/kde4/config.kcfg/konqueror.kcfg
@@ -221,4 +170,4 @@ libkonq_devel_CONTENTS="
 	usr/lib/libkonq.dll.a
 	usr/share/dbus-1/interfaces/org.kde.FavIcon.xml
 "
-PKG_IGNORE="usr/lib/lib*private.dll.a"
+PKG_IGNORE="usr/lib/lib*private*.dll.a"
