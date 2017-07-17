@@ -13,138 +13,11 @@ PATCH_URI="
 	16.08.3-optional-subdirs.patch
 "
 
-DO_NOT_COMPILE="kdepasswd kdialog keditbookmarks kfind nsplugins plasma"
+DO_NOT_COMPILE="dolphin kdepasswd kdialog keditbookmarks kfind konqueror konq-plugins nsplugins plasma"
 
-PKG_NAMES="${NAME} dolphin4 konqueror konqueror-devel libkonq5 libkonq-devel"
+PKG_NAMES="${NAME} libkonq5 libkonq-devel"
 kde_baseapps_REQUIRES="dolphin kdialog keditbookmarks kfind konqueror"
 kde_baseapps_CONTENTS="usr/share/doc/${NAME}/"
-dolphin4_OBSOLETES="plasma-applet-folderview"
-dolphin4_REQUIRES="kde-runtime kdialog konsole4-part"
-dolphin4_SUMMARY="KDE file manager"
-dolphin4_CONTENTS="
-	etc/postinstall/kde-baseapps.sh
-	usr/bin/cygdolphinprivate4-4.dll
-	usr/bin/cygkdeinit4_dolphin4.dll
-	usr/bin/dolphin4.exe
-	usr/lib/kde4/dolphinpart.dll
-	usr/lib/kde4/kio_filenamesearch.dll
-	usr/lib/kde4/kcm_dolphin*
-	usr/share/kde4/apps/dolphin/
-	usr/share/kde4/apps/dolphinpart/dolphinpart.rc
-	usr/share/kde4/config/servicemenu.knsrc
-	usr/share/kde4/services/dolphinpart.desktop
-	usr/share/kde4/services/filenamesearch.protocol
-	usr/share/kde4/services/kcmdolphin*
-	usr/share/kde4/servicetypes/fileviewversioncontrolplugin.desktop
-"
-konqueror_SUMMARY="KDE web browser"
-konqueror_REQUIRES="dolphin4 kate4-part kde-runtime kdialog kwebkitpart"
-konqueror_CONTENTS="
-	--exclude=arrow_*.png
-	etc/postinstall/kde-baseapps.sh
-	usr/bin/cygkdeinit4_kfmclient.dll
-	usr/bin/cygkdeinit4_konqueror.dll
-	usr/bin/cygkonqsidebarplugin-4.dll
-	usr/bin/cygkonquerorprivate-4.dll
-	usr/bin/fsview.exe
-	usr/bin/kfmclient.exe
-	usr/bin/konqueror.exe
-	usr/lib/kde4/adblock.dll
-	usr/lib/kde4/akregatorkonqfeedicon.dll
-	usr/lib/kde4/autorefresh.dll
-	usr/lib/kde4/babelfishplugin.dll
-	usr/lib/kde4/dirfilterplugin.dll
-	usr/lib/kde4/domtreeviewerplugin.dll
-	usr/lib/kde4/fsviewpart.dll
-	usr/lib/kde4/kcm_history.dll
-	usr/lib/kde4/kcm_kio.dll
-	usr/lib/kde4/kcm_konq.dll
-	usr/lib/kde4/kcm_konqhtml.dll
-	usr/lib/kde4/kcm_kurifilt.dll
-	usr/lib/kde4/kcm_performance.dll
-	usr/lib/kde4/kded_konqy_preloader.dll
-	usr/lib/kde4/khtmlkttsdplugin.dll
-	usr/lib/kde4/khtmlsettingsplugin.dll
-	usr/lib/kde4/kimgallery.dll
-	usr/lib/kde4/konqsidebar_history.dll
-	usr/lib/kde4/konqsidebar_places.dll
-	usr/lib/kde4/konqsidebar_tree.dll
-	usr/lib/kde4/konqsidebar_web.dll
-	usr/lib/kde4/konq_aboutpage.dll
-	usr/lib/kde4/konq_shellcmdplugin.dll
-	usr/lib/kde4/konq_sidebar.dll
-	usr/lib/kde4/konq_sidebartree_bookmarks.dll
-	usr/lib/kde4/konq_sidebartree_dirtree.dll
-	usr/lib/kde4/minitoolsplugin.dll
-	usr/lib/kde4/rellinksplugin.dll
-	usr/lib/kde4/searchbarplugin.dll
-	usr/lib/kde4/uachangerplugin.dll
-	usr/lib/kde4/validatorsplugin.dll
-	usr/lib/kde4/webarchiverplugin.dll
-	usr/lib/kde4/webarchivethumbnail.dll
-	usr/share/appdata/konqueror.appdata.xml
-	usr/share/applications/kde4/Home.desktop
-	usr/share/applications/kde4/kfmclient*.desktop
-	usr/share/applications/kde4/konqbrowser.desktop
-	usr/share/applications/kde4/konquerorsu.desktop
-	usr/share/autostart/konqy_preload.desktop
-	usr/share/dbus-1/interfaces/org.kde.Konqueror.*
-	usr/share/doc/HTML/en/konqueror/
-	usr/share/doc/konqueror/
-	usr/share/icons/hicolor/*/apps/fsview.*
-	usr/share/icons/hicolor/*/apps/konqueror.*
-	usr/share/icons/oxygen/*/actions/babelfish.*
-	usr/share/icons/oxygen/*/actions/cssvalidator.*
-	usr/share/icons/oxygen/*/actions/htmlvalidator.*
-	usr/share/icons/oxygen/*/actions/imagegallery.*
-	usr/share/icons/oxygen/*/actions/validators.*
-	usr/share/icons/oxygen/*/actions/webarchiver.*
-	usr/share/dbus-1/interfaces/org.kde.konqueror.Preloader.xml
-	usr/share/kde4/apps/akregator/pics/feed.png
-	usr/share/kde4/apps/dolphinpart/kpartplugins/
-	usr/share/kde4/apps/domtreeviewer/
-	usr/share/kde4/apps/fsview/
-	usr/share/kde4/apps/kcmcss/template.css
-	usr/share/kde4/apps/kcontrol/pics/onlyone.png
-	usr/share/kde4/apps/kcontrol/pics/overlapping.png
-	usr/share/kde4/apps/khtml/
-	usr/share/kde4/apps/konqsidebartng/
-	usr/share/kde4/apps/konqueror/
-	usr/share/kde4/apps/kwebkitpart/kpartplugins/
-	usr/share/kde4/config/konqsidebartngrc
-	usr/share/kde4/config/translaterc
-	usr/share/kde4/config.kcfg/konqueror.kcfg
-	usr/share/kde4/config.kcfg/validators.kcfg
-	usr/share/kde4/services/bookmarks.desktop
-	usr/share/kde4/services/cache.desktop
-	usr/share/kde4/services/cookies.desktop
-	usr/share/kde4/services/ebrowsing.desktop
-	usr/share/kde4/services/filebehavior.desktop
-	usr/share/kde4/services/fsview_part.desktop
-	usr/share/kde4/services/kcmhistory.desktop
-	usr/share/kde4/services/kcmkonqyperformance.desktop
-	usr/share/kde4/services/kcmperformance.desktop
-	usr/share/kde4/services/kded/konqy_preloader.desktop
-	usr/share/kde4/services/khtml_*.desktop
-	usr/share/kde4/services/konqueror.desktop
-	usr/share/kde4/services/konq_aboutpage.desktop
-	usr/share/kde4/services/konq_sidebartng.desktop
-	usr/share/kde4/services/netpref.desktop
-	usr/share/kde4/services/proxy.desktop
-	usr/share/kde4/services/ServiceMenus/imageconverter.desktop
-	usr/share/kde4/services/smb.desktop
-	usr/share/kde4/services/useragent.desktop
-	usr/share/kde4/services/useragentstrings/
-	usr/share/kde4/services/webarchivethumbnail.desktop
-	usr/share/kde4/servicetypes/konqaboutpage.desktop
-	usr/share/kde4/servicetypes/uasprovider.desktop
-"
-konqueror_devel_SUMMARY="${konqueror_SUMMARY} (plugin development)"
-konqueror_devel_REQUIRES="libkdecore-devel"
-konqueror_devel_CONTENTS="
-	usr/include/kde4/konqsidebarplugin.h
-	usr/lib/libkonqsidebarplugin.dll.a
-"
 libkonq5_CATEGORY="Libs"
 libkonq5_SUMMARY="KDE file manager library (runtime)"
 libkonq5_CONTENTS="
@@ -170,4 +43,3 @@ libkonq_devel_CONTENTS="
 	usr/lib/libkonq.dll.a
 	usr/share/dbus-1/interfaces/org.kde.FavIcon.xml
 "
-PKG_IGNORE="usr/lib/lib*private*.dll.a"
