@@ -7,9 +7,6 @@ CATEGORY="KDE"
 SUMMARY="KDE base applications"
 
 PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/kdebase-4.2.1-home-icon.patch
-	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/kdebase-4.4.0-konqueror-kde%23228593.patch
-	http://pkgs.fedoraproject.org/cgit/kde-baseapps.git/plain/kde-baseapps-4.14.3-konq_mimetype.patch
 	16.08.3-optional-subdirs.patch
 "
 
